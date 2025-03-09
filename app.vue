@@ -12,9 +12,10 @@
 
 <style>
 * {
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0;
+  margin: 0;
 }
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif !important;

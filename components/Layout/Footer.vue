@@ -1,31 +1,48 @@
 <template>
-  <footer class="footer p-d-flex p-flex-wrap p-jc-between p-ai-center p-p-4">
-    <!-- Phần bên trái -->
-    <div class="left-content p-d-flex p-flex-column p-ai-start">
-      <h2 class="p-mb-2">Building Global Brands Owned By Vietnamese People</h2>
-      <!-- Thay thế đoạn <p> bằng Button -->
-      <Button label="JOIN OUR TEAM" class="p-button-outlined p-mb-4" />
-      <div class="company-info p-d-flex p-flex-column p-ai-start">
-        <p>Công ty TNHH Equarus Solutions</p>
-        <p>© 2025 Equarus Solutions, All Rights Reserved.</p>
+  <footer class="footer">
+    <!-- Dòng 1: Navbar -->
+    <div class="row navbar">
+      <div class="left">
+        <span>About</span>
+        <span>Careers</span>
+      </div>
+      <div class="right">
+        <span>Hà Nội</span>
       </div>
     </div>
 
-    <!-- Phần bên phải -->
-    <div class="right-content p-d-flex p-flex-column p-ai-end">
-      <div class="address p-d-flex p-flex-column p-ai-end p-mb-2">
-        <p>Hanoi</p>
-        <p>
-          Số 36, Louis 2, Khu đô thị Louis City Đại Mỗ, Phường Đại Mỗ, Quận Nam
-          Từ Liêm, Thành phố Hà Nội, Việt Nam.
-        </p>
+    <!-- Dòng 2: Description và Địa chỉ -->
+    <div class="row description">
+      <div class="left">
+        <h2>Building Global Brands Owned By Vietnamese People</h2>
       </div>
-      <div class="contact p-d-flex p-flex-column p-ai-end p-mb-2">
+      <div class="right">
+        <p>Số 36, Louis 2, Khu đô thị Louis City Đại Mỗ,</p>
+        <p>Phường Đại Mỗ, Quận Nam Từ Liêm,</p>
+        <p>Thành phố Hà Nội, Việt Nam.</p>
+      </div>
+    </div>
+
+    <!-- Dòng 3: Button và Thông tin liên hệ -->
+    <div class="row contact">
+      <div class="left">
+        <Button label="JOIN OUR TEAM" class="p-button-outlined custom-button" />
+      </div>
+      <div class="right">
         <p>info@equarus.com</p>
         <p>+84 962 543 921</p>
       </div>
-      <!-- Thay thế Button bằng hình ảnh -->
-      <img src="~/public/images/company.png" alt="Logo" class="logo p-mt-2" />
+    </div>
+
+    <!-- Dòng 4: Thông tin công ty và Logo -->
+    <div class="row company">
+      <div class="left">
+        <p>Công ty TNHH Equarus Solutions</p>
+        <p>© 2025 Equarus Solutions, All Rights Reserved.</p>
+      </div>
+      <div class="right">
+        <img src="~/public/images/company.png" alt="Logo" class="logo" />
+      </div>
     </div>
   </footer>
 </template>
@@ -43,36 +60,63 @@ export default {
   padding: 2rem;
 }
 
-.left-content,
-.right-content {
+/* Style chung cho các dòng */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Style cho phần bên trái và bên phải */
+.left,
+.right {
   flex: 1;
 }
 
-.left-content {
+.left {
   text-align: left;
 }
 
-.right-content {
+.right {
   text-align: right;
 }
 
-.company-info,
-.address,
-.contact {
-  margin: 1rem 0;
+/* Style cho navbar */
+.navbar .left span {
+  margin-right: 1rem;
 }
 
-h2 {
+/* Style cho description */
+.description h2 {
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 0;
 }
 
-p {
-  margin: 0.5rem 0;
+/* Style cho button */
+.contact .left .p-button-outlined {
+  margin: 0;
 }
 
+/* Style cho logo */
 .logo {
   width: 100px; /* Điều chỉnh kích thước logo */
   height: auto;
+}
+
+/* Style cho thông tin công ty */
+.company .left p {
+  margin: 0.25rem 0;
+}
+
+.custom-button {
+  background-color: none; /* Màu nền */
+  color: #ffffff; /* Màu chữ */
+  border: 2px solid #828282; /* Viền */
+  border-radius: 25px; /* Bo góc */
+  padding: 0.5rem 3.5rem; /* Khoảng cách bên trong */
+  font-weight: bold; /* Độ đậm của chữ */
+  transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi */
 }
 </style>
