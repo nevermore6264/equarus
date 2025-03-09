@@ -26,7 +26,7 @@
     <!-- Dòng 3: Button và Thông tin liên hệ -->
     <div class="row contact">
       <div class="left">
-        <Button label="JOIN OUR TEAM" class="p-button-outlined custom-button" />
+        <Button label="JOIN OUR TEAM" class="p-button-outlined btn-join-team" />
       </div>
       <div class="right">
         <p>info@equarus.com</p>
@@ -57,7 +57,11 @@ export default {
 .footer {
   background-color: #000000;
   color: #ffffff;
-  padding: 2rem;
+  padding: 50px;
+}
+
+.row:first-child {
+  margin-bottom: 25px;
 }
 
 /* Style chung cho các dòng */
@@ -65,7 +69,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 50px;
 }
 
 /* Style cho phần bên trái và bên phải */
@@ -110,13 +114,13 @@ export default {
   margin: 0.25rem 0;
 }
 
-.custom-button {
-  background-color: none; /* Màu nền */
+.btn-join-team {
   color: #ffffff; /* Màu chữ */
   border: 2px solid #828282; /* Viền */
   border-radius: 25px; /* Bo góc */
-  padding: 0.5rem 3.5rem; /* Khoảng cách bên trong */
-  font-weight: bold; /* Độ đậm của chữ */
+  padding: 16px 44px; /* Khoảng cách bên trong */
+  font-size: 15px; /* Độ đậm của chữ */
   transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi */
+  font-family: "Lexend Zetta", sans-serif;
 }
 </style>

@@ -34,7 +34,11 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/gif', href: 'layout/images/logo.jpg' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@300;400;500;600;700&display=swap',
+        },
       ]
     }
   }
