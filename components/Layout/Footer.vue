@@ -15,15 +15,17 @@
     <div class="right-content p-d-flex p-flex-column p-ai-end">
       <div class="address p-d-flex p-flex-column p-ai-end p-mb-2">
         <p>Hanoi</p>
-        <p>Số Số, Lòuie 2, Phó đồ Hộ Luật, Chủ Đạt Mỗ,</p>
-        <p>Phường Đại Mỗ, Quận Nam Tự Liêm, Thành phố Hồ Nội, Việt Nam.</p>
+        <p>
+          Số 36, Louis 2, Khu đô thị Louis City Đại Mỗ, Phường Đại Mỗ, Quận Nam
+          Từ Liêm, Thành phố Hà Nội, Việt Nam.
+        </p>
       </div>
       <div class="contact p-d-flex p-flex-column p-ai-end p-mb-2">
         <p>info@equarus.com</p>
         <p>+84 962 543 921</p>
       </div>
       <!-- Thay thế Button bằng hình ảnh -->
-      <img src="~/images/company.png" alt="Logo" class="logo p-mt-2" />
+      <img src="~/public/images/company.png" alt="Logo" class="logo p-mt-2" />
     </div>
   </footer>
 </template>
