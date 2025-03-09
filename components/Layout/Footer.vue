@@ -7,19 +7,21 @@
         <span>Careers</span>
       </div>
       <div class="right">
-        <span>Hà Nội</span>
+        <p class="city">Hanoi</p>
       </div>
     </div>
 
     <!-- Dòng 2: Description và Địa chỉ -->
     <div class="row description">
       <div class="left">
-        <h2>Building Global Brands Owned By Vietnamese People</h2>
+        <p class="description">Building Global Brands Owned</p>
+        <p class="description">By Vietnamese People</p>
       </div>
       <div class="right">
-        <p>Số 36, Louis 2, Khu đô thị Louis City Đại Mỗ,</p>
-        <p>Phường Đại Mỗ, Quận Nam Từ Liêm,</p>
-        <p>Thành phố Hà Nội, Việt Nam.</p>
+        <p class="address">Số 36, Louis 2,</p>
+        <p class="address">Khu đô thị Louis City Đại Mỗ,</p>
+        <p class="address">Phường Đại Mỗ, Quận Nam Từ Liêm,</p>
+        <p class="address">Thành phố Hà Nội, Việt Nam.</p>
       </div>
     </div>
 
@@ -29,16 +31,16 @@
         <Button label="JOIN OUR TEAM" class="p-button-outlined btn-join-team" />
       </div>
       <div class="right">
-        <p>info@equarus.com</p>
-        <p>+84 962 543 921</p>
+        <p class="email">info@equarus.com</p>
+        <p class="phone">+84 962 543 921</p>
       </div>
     </div>
 
     <!-- Dòng 4: Thông tin công ty và Logo -->
     <div class="row company">
       <div class="left">
-        <p>Công ty TNHH Equarus Solutions</p>
-        <p>© 2025 Equarus Solutions, All Rights Reserved.</p>
+        <p class="company-name">Công ty TNHH Equarus Solutions</p>
+        <p class="copyright">© 2025 Equarus Solutions, All Rights Reserved.</p>
       </div>
       <div class="right">
         <img src="~/public/images/company.png" alt="Logo" class="logo" />
@@ -73,9 +75,12 @@ export default {
 }
 
 /* Style cho phần bên trái và bên phải */
-.left,
+.left {
+  flex: 6; /* Chiếm 60% không gian */
+}
+
 .right {
-  flex: 1;
+  flex: 4; /* Chiếm 40% không gian */
 }
 
 .left {
@@ -83,7 +88,7 @@ export default {
 }
 
 .right {
-  text-align: right;
+  text-align: left;
 }
 
 /* Style cho navbar */
@@ -105,7 +110,7 @@ export default {
 
 /* Style cho logo */
 .logo {
-  width: 100px; /* Điều chỉnh kích thước logo */
+  width: 318px; /* Điều chỉnh kích thước logo */
   height: auto;
 }
 
@@ -120,7 +125,29 @@ export default {
   border-radius: 25px; /* Bo góc */
   padding: 16px 44px; /* Khoảng cách bên trong */
   font-size: 15px; /* Độ đậm của chữ */
-  transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi */
   font-family: "Lexend Zetta", sans-serif;
+}
+
+.company-name {
+  font-size: 24px;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.email,
+.phone,
+.address {
+  font-size: 17px;
+}
+
+.city {
+  font-size: 35px;
+}
+
+.description {
+  font-weight: bold;
+  font-size: 34px;
 }
 </style>

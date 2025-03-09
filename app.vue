@@ -18,7 +18,7 @@
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif !important;
+  font-family: "Poppins", sans-serif;
   background: linear-gradient(to right, #d7f2fe, #ffffff);
 }
 
