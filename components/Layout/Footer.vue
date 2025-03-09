@@ -3,8 +3,8 @@
     <!-- Dòng 1: Navbar -->
     <div class="row navbar">
       <div class="left">
-        <span>About</span>
-        <span>Careers</span>
+        <span class="navbar-item">About</span>
+        <span class="navbar-item">Careers</span>
       </div>
       <div class="right">
         <p class="city">Hanoi</p>
@@ -149,5 +149,13 @@ export default {
 .description {
   font-weight: bold;
   font-size: 34px;
+}
+
+.navbar-item {
+  font-size: 25px;
+}
+
+.navbar .left span:last-child {
+  margin-left: 32%; /* Đẩy "Careers" về phía bên phải */
 }
 </style>
