@@ -19,7 +19,6 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(to right, #d7f2fe, #ffffff);
 }
 
 label {

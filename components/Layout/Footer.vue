@@ -14,8 +14,8 @@
     <!-- Dòng 2: Description và Địa chỉ -->
     <div class="row description">
       <div class="left">
-        <p class="description">Building Global Brands Owned</p>
-        <p class="description">By Vietnamese People</p>
+        <p class="content">Building Global Brands Owned</p>
+        <p class="content">By Vietnamese People</p>
       </div>
       <div class="right">
         <p class="address">Số 36, Louis 2,</p>
@@ -146,7 +146,7 @@ export default {
   font-size: 35px;
 }
 
-.description {
+.content {
   font-weight: bold;
   font-size: 34px;
 }
@@ -156,6 +156,6 @@ export default {
 }
 
 .navbar .left span:last-child {
-  margin-left: 32%; /* Đẩy "Careers" về phía bên phải */
+  margin-left: 30%; /* Đẩy "Careers" về phía bên phải */
 }
 </style>
