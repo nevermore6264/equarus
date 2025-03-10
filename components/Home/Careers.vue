@@ -9,36 +9,36 @@
     <p class="subtitle">Chức năng, nhiệm vụ phòng ban</p>
     <div class="departments">
       <div class="department">
-        <h2>R&D</h2>
-        <p>Nghiên cứu và phát triển sản phẩm mới</p>
+        <p class="title">R&D</p class="title">
+        <p class="desc">Nghiên cứu và phát triển sản phẩm mới</p>
       </div>
       <div class="department">
-        <h2>Supplychain</h2>
-        <p>Quản lý chuỗi cung ứng và vận hành kho hàng</p>
+        <p class="title">Supplychain</p class="title">
+        <p class="desc">Quản lý chuỗi cung ứng và vận hành kho hàng</p>
       </div>
       <div class="department">
-        <h2>Digital Marketing</h2>
-        <p>Quản lý và triển khai các chiến dịch marketing trực tuyến</p>
+        <p class="title">Digital Marketing</p class="title">
+        <p class="desc">Quản lý và triển khai các chiến dịch marketing trực tuyến</p>
       </div>
       <div class="department">
-        <h2>Legal</h2>
-        <p>Quản lý các vấn đề pháp lý sản phẩm và tuân thủ quy định của sàn</p>
+        <p class="title">Legal</p class="title">
+        <p class="desc">Quản lý các vấn đề pháp lý sản phẩm và tuân thủ quy định của sàn</p>
       </div>
       <div class="department">
-        <h2>Product Design</h2>
-        <p>Thiết kế và phát triển sản phẩm</p>
+        <p class="title">Product Design</p class="title">
+        <p class="desc">Thiết kế và phát triển sản phẩm</p>
       </div>
       <div class="department">
-        <h2>HR</h2>
-        <p>Quản lý nhân sự và phát triển đội ngũ</p>
+        <p class="title">HR</p class="title">
+        <p class="desc">Quản lý nhân sự và phát triển đội ngũ</p>
       </div>
       <div class="department">
-        <h2>Brand Marketing</h2>
-        <p>Xây dựng và phát triển thương hiệu</p>
+        <p class="title">Brand Marketing</p class="title">
+        <p class="desc">Xây dựng và phát triển thương hiệu</p>
       </div>
       <div class="department">
-        <h2>Finance</h2>
-        <p>Quản lý tài chính</p>
+        <p class="title">Finance</p class="title">
+        <p class="desc">Quản lý tài chính</p>
       </div>
     </div>
   </div>
@@ -57,37 +57,41 @@ export default {
 
 .title {
   font-size: 48px;
-  font-weight: bold;
+  font-family: 'Inter', sans-serif;
 }
 
 .subtitle {
   font-size: 24px;
   color: #343434;
   margin-bottom: 100px;
+  font-family: 'Inter', sans-serif;
 }
 
 .departments {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 cột bằng nhau */
+  grid-template-rows: repeat(2, 1fr);
+  /* 2 hàng bằng nhau */
   gap: 1.5rem;
+  /* Khoảng cách giữa các phần tử */
 }
 
 .department {
-  background-color: #f9f9f9;
   padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.department h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+.department .title {
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: #000000;
+  font-family: 'Gentium Book Basic', serif;
 }
 
-.department p {
-  font-size: 1rem;
-  color: #444;
+.department .desc {
+  font-size: 25px;
+  color: #616161;
+  font-family: 'Gentium Book Basic', serif;
 }
 
 /* Style cho thẻ div chứa gạch chân và icon */
@@ -97,13 +101,18 @@ export default {
 }
 
 .underline {
-  flex: 1; /* Chiếm phần lớn không gian */
-  height: 2px; /* Độ dày của gạch chân */
-  background-color: #00dbf4; /* Màu gạch chân */
+  flex: 1;
+  /* Chiếm phần lớn không gian */
+  height: 2px;
+  /* Độ dày của gạch chân */
+  background-color: #00dbf4;
+  /* Màu gạch chân */
 }
 
 .pi-arrow-down-left {
-  margin-left: 0.5rem; /* Khoảng cách giữa gạch chân và icon */
-  font-size: 1.5rem; /* Kích thước icon */
+  margin-left: 0.5rem;
+  /* Khoảng cách giữa gạch chân và icon */
+  font-size: 1.5rem;
+  /* Kích thước icon */
 }
 </style>
