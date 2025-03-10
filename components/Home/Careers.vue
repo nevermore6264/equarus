@@ -42,6 +42,10 @@
         <p class="desc">Quản lý tài chính</p>
       </div>
     </div>
+
+    <div class="join-us">
+      <img src="~/public/images/join_us.png" alt="Join Us" class="join-us-image" />
+    </div>
   </div>
 </template>
 
@@ -106,5 +110,15 @@ export default {
 .pi-arrow-down-left {
   margin-left: 0.5rem;
   font-size: 1.5rem;
+}
+
+.join-us {
+  margin-top: 50px; /* Khoảng cách giữa danh sách phòng ban và hình ảnh */
+  text-align: center; /* Căn giữa hình ảnh */
+}
+
+.join-us-image {
+  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước container */
+  height: auto; /* Giữ tỷ lệ hình ảnh */
 }
 </style>
