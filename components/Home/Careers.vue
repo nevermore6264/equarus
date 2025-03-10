@@ -104,7 +104,7 @@ export default {
 .underline {
   flex: 1;
   height: 2px;
-  background-color: #00dbf4;
+  background-color: #00DBF4;
 }
 
 .pi-arrow-down-left {
