@@ -6,6 +6,35 @@
       <i class="pi pi-arrow-down-left" style="color: black"></i>
     </div>
     <p class="subtitle"></p>
+    <table class="target-table">
+      <tbody>
+        <tr>
+          <td class="year">2025 - 2026</td>
+          <td class="icon">
+            <i
+              class="pi pi-arrow-up"
+              style="color: #00dbf4; font-size: 24px"
+            ></i>
+          </td>
+          <td class="content">
+            Hoàn thiện mô hình vận hành và quy trình xây dựng thương hiệu toàn
+            diện
+          </td>
+        </tr>
+        <tr>
+          <td class="year">2027 - 2034</td>
+          <td class="icon">
+            <i
+              class="pi pi-arrow-up"
+              style="color: #00dbf4; font-size: 24px"
+            ></i>
+          </td>
+          <td class="content">
+            Phát triển thêm nhiều thương hiệu toàn cầu mới
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -48,5 +77,41 @@ export default {
 .pi-arrow-down-left {
   margin-left: 0.5rem;
   font-size: 1.5rem;
+}
+
+.target-table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: #ffffff;
+}
+
+.target-table th,
+.target-table td {
+  text-align: left;
+}
+
+.target-table th {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: #00dddf;
+}
+
+.target-table .content {
+  font-size: 48px;
+  font-family: "Gentium Book Basic", serif;
+  color: #d9d9d9;
+}
+
+.target-table .year {
+  font-size: 64px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  width: 33%;
+}
+
+.target-table .icon {
+  width: 48px;
+  height: 48px;
 }
 </style>
