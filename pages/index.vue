@@ -1,14 +1,14 @@
 <template>
   <div>
     <Nuxt />
-    <Content />
+    <Contact />
     <Careers />
     <Footer />
   </div>
 </template>
 
 <script>
-import Content from "~/components/Home/Content.vue";
+import Contact from "~/components/Home/Contact.vue";
 import Careers from "~/components/Home/Careers.vue";
 import Footer from "~/components/Layout/Footer.vue";
 
