@@ -45,6 +45,7 @@
 
     <div class="join-us">
       <img src="~/public/images/join_us.png" alt="Join Us" class="join-us-image" />
+      <button class="get-started-button">Get started</button>
     </div>
   </div>
 </template>
@@ -57,7 +58,7 @@ export default {
 
 <style scoped>
 .careers {
-  padding: 2rem;
+  padding: 89.5px;
 }
 
 .title {
@@ -80,7 +81,6 @@ export default {
 }
 
 .department {
-  padding: 15px;
 }
 
 .department .title {
@@ -113,12 +113,29 @@ export default {
 }
 
 .join-us {
-  margin-top: 50px; /* Khoảng cách giữa danh sách phòng ban và hình ảnh */
-  text-align: center; /* Căn giữa hình ảnh */
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .join-us-image {
-  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước container */
-  height: auto; /* Giữ tỷ lệ hình ảnh */
+  max-width: 100%;
+  height: auto;
 }
+
+.get-started-button {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  padding: 16px 44px;
+  font-size: 15px;
+  font-family: "Lexend Zetta", sans-serif;
+  color: #000000;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
 </style>
