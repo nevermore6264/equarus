@@ -13,7 +13,7 @@
           <td class="icon">
             <i
               class="pi pi-arrow-up"
-              style="color: #00dbf4; font-size: 24px"
+              style="color: #00dbf4; font-size: 48px"
             ></i>
           </td>
           <td class="content">
@@ -26,7 +26,7 @@
           <td class="icon">
             <i
               class="pi pi-arrow-up"
-              style="color: #00dbf4; font-size: 24px"
+              style="color: #00dbf4; font-size: 48px"
             ></i>
           </td>
           <td class="content">
@@ -101,6 +101,7 @@ export default {
   font-size: 48px;
   font-family: "Gentium Book Basic", serif;
   color: #d9d9d9;
+  padding-left: 20px; /* Thêm khoảng cách giữa icon và nội dung */
 }
 
 .target-table .year {
@@ -108,10 +109,5 @@ export default {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   width: 33%;
-}
-
-.target-table .icon {
-  width: 48px;
-  height: 48px;
 }
 </style>
