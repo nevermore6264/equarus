@@ -1,8 +1,7 @@
 import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
-  modules: ['notivue/nuxt'
-  ],
+  modules: ['notivue/nuxt', 'nuxt-swiper'],
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   vite: {},

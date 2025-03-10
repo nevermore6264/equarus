@@ -1,22 +1,36 @@
 <template>
-  <div class="careers">
+  <div class="partner">
     <p class="title">Partner</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
       <i class="pi pi-arrow-down-left" style="color: black"></i>
     </div>
     <p class="subtitle"></p>
+    <div class="partner-images">
+      <img
+        v-for="(image, index) in images"
+        :key="index"
+        :src="image.src"
+        :alt="image.alt"
+        class="partner-image"
+      />
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "Partner",
-};
+<script setup>
+// Danh sách ảnh
+const images = [
+  { src: "/images/partner/amazon.png", alt: "Amazon" },
+  { src: "/images/partner/walmart.png", alt: "Walmart" },
+  { src: "/images/partner/shopify.png", alt: "Shopify" },
+  { src: "/images/partner/lianlianglobal.png", alt: "LianLianGlobal" },
+  { src: "/images/partner/worldfirst.png", alt: "WORLDFIRST" },
+];
 </script>
 
 <style scoped>
-.careers {
+.partner {
   padding: 89.5px;
 }
 
@@ -46,5 +60,21 @@ export default {
 .pi-arrow-down-left {
   margin-left: 0.5rem;
   font-size: 1.5rem;
+}
+
+.partner-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #000000;
+  border-radius: 10px;
+  height: 140px;
+}
+
+.partner-image {
+  height: auto;
+  border-radius: 8px;
+  padding: 0 20px;
 }
 </style>
