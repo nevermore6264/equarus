@@ -13,28 +13,29 @@
         <p class="desc">Nghiên cứu và phát triển sản phẩm mới</p>
       </div>
       <div class="department">
-        <p class="title">Supplychain</p class="title">
-        <p class="desc">Quản lý chuỗi cung ứng và vận hành kho hàng</p>
-      </div>
-      <div class="department">
         <p class="title">Digital Marketing</p class="title">
         <p class="desc">Quản lý và triển khai các chiến dịch marketing trực tuyến</p>
-      </div>
-      <div class="department">
-        <p class="title">Legal</p class="title">
-        <p class="desc">Quản lý các vấn đề pháp lý sản phẩm và tuân thủ quy định của sàn</p>
       </div>
       <div class="department">
         <p class="title">Product Design</p class="title">
         <p class="desc">Thiết kế và phát triển sản phẩm</p>
       </div>
       <div class="department">
-        <p class="title">HR</p class="title">
-        <p class="desc">Quản lý nhân sự và phát triển đội ngũ</p>
-      </div>
-      <div class="department">
         <p class="title">Brand Marketing</p class="title">
         <p class="desc">Xây dựng và phát triển thương hiệu</p>
+      </div>
+
+      <div class="department">
+        <p class="title">Supplychain</p class="title">
+        <p class="desc">Quản lý chuỗi cung ứng và vận hành kho hàng</p>
+      </div>
+      <div class="department">
+        <p class="title">Legal</p class="title">
+        <p class="desc">Quản lý các vấn đề pháp lý sản phẩm và tuân thủ quy định của sàn</p>
+      </div>
+      <div class="department">
+        <p class="title">HR</p class="title">
+        <p class="desc">Quản lý nhân sự và phát triển đội ngũ</p>
       </div>
       <div class="department">
         <p class="title">Finance</p class="title">
@@ -70,15 +71,12 @@ export default {
 .departments {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* 4 cột bằng nhau */
   grid-template-rows: repeat(2, 1fr);
-  /* 2 hàng bằng nhau */
   gap: 1.5rem;
-  /* Khoảng cách giữa các phần tử */
 }
 
 .department {
-  padding: 1.5rem;
+  padding: 15px;
 }
 
 .department .title {
@@ -94,7 +92,6 @@ export default {
   font-family: 'Gentium Book Basic', serif;
 }
 
-/* Style cho thẻ div chứa gạch chân và icon */
 .underline-container {
   display: flex;
   align-items: center;
@@ -102,17 +99,12 @@ export default {
 
 .underline {
   flex: 1;
-  /* Chiếm phần lớn không gian */
   height: 2px;
-  /* Độ dày của gạch chân */
   background-color: #00dbf4;
-  /* Màu gạch chân */
 }
 
 .pi-arrow-down-left {
   margin-left: 0.5rem;
-  /* Khoảng cách giữa gạch chân và icon */
   font-size: 1.5rem;
-  /* Kích thước icon */
 }
 </style>
