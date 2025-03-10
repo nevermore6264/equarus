@@ -80,9 +80,6 @@ export default {
   gap: 1.5rem;
 }
 
-.department {
-}
-
 .department .title {
   font-size: 35px;
   margin-bottom: 30px;
@@ -126,7 +123,7 @@ export default {
 .get-started-button {
   position: absolute;
   bottom: 100px;
-  left: 100px;
+  left: 45px;
   padding: 16px 44px;
   font-size: 15px;
   font-family: "Lexend Zetta", sans-serif;

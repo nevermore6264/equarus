@@ -6,7 +6,6 @@ import Column from "primevue/column";
 import Button from "primevue/button";
 import InputText from "primevue/inputtext";
 import InputNumber from "primevue/inputnumber";
-
 import Dialog from "primevue/dialog";
 import Dropdown from "primevue/dropdown";
 import Checkbox from "primevue/checkbox";
@@ -21,6 +20,7 @@ import Slider from "primevue/slider";
 import Paginator from "primevue/paginator";
 import Carousel from "primevue/carousel";
 import InputSwitch from "primevue/inputswitch";
+import FloatLabel from "primevue/floatlabel";
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(PrimeVue);
@@ -45,4 +45,5 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component("Paginator", Paginator);
   nuxtApp.vueApp.component("Carousel", Carousel);
   nuxtApp.vueApp.component("InputSwitch", InputSwitch);
+  nuxtApp.vueApp.component("FloatLabel", FloatLabel);
 });

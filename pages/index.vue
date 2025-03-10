@@ -14,8 +14,9 @@ import Footer from "~/components/Layout/Footer.vue";
 
 export default {
   components: {
-    Footer,
+    Contact,
     Careers,
+    Footer,
   },
 };
 </script>
