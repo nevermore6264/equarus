@@ -84,7 +84,6 @@ table {
 
 table th,
 table td {
-  padding: 12px 15px;
   text-align: left;
 }
 

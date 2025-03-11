@@ -3,7 +3,7 @@
     <p class="title">Mục tiêu</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
-      <i class="pi pi-arrow-down-left" style="color: black"></i>
+      <i class="pi pi-arrow-down-left" style="color: #ffffff"></i>
     </div>
     <p class="subtitle"></p>
     <table class="target-table">
@@ -101,13 +101,19 @@ export default {
   font-size: 48px;
   font-family: "Gentium Book Basic", serif;
   color: #d9d9d9;
-  padding-left: 20px; /* Thêm khoảng cách giữa icon và nội dung */
+  padding-left: 20px;
+  font-weight: 300;
 }
 
 .target-table .year {
   font-size: 64px;
   font-family: "Poppins", sans-serif;
   color: #ffffff;
-  width: 33%;
+  width: 31%;
+  font-weight: 300;
+}
+
+.target-table td {
+  padding-bottom: 50px;
 }
 </style>
