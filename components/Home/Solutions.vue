@@ -3,19 +3,47 @@
     <div class="stats">
       <div class="stat">
         <h2>Brand</h2>
-        <p>↑ 4 +</p>
+        <p>
+          <i
+            class="pi pi-arrow-up"
+            style="color: #00dbf4; font-size: 37px; vertical-align: super"
+          ></i>
+          <span>4+</span>
+          <span class="note">Brands</span>
+        </p>
       </div>
       <div class="stat">
         <h2>Products</h2>
-        <p>↑ 1000 +</p>
+        <p>
+          <i
+            class="pi pi-arrow-up"
+            style="color: #00dbf4; font-size: 37px; vertical-align: super"
+          ></i>
+          <span>1000+</span>
+          <span class="note">Products</span>
+        </p>
       </div>
       <div class="stat">
         <h2>Channel</h2>
-        <p>↑ 3 +</p>
+        <p>
+          <i
+            class="pi pi-arrow-up"
+            style="color: #00dbf4; font-size: 37px; vertical-align: super"
+          ></i>
+          <span>3+</span>
+          <span class="note">Channel</span>
+        </p>
       </div>
       <div class="stat">
         <h2>Order</h2>
-        <p>↑ 2M +</p>
+        <p>
+          <i
+            class="pi pi-arrow-up"
+            style="color: #00dbf4; font-size: 37px; vertical-align: super"
+          ></i>
+          <span>2M+</span>
+          <span class="note">Orders</span>
+        </p>
       </div>
     </div>
     <div class="description">
@@ -31,6 +59,7 @@
         >
       </p>
     </div>
+    <img src="~/public/images/map.png" alt="Join Us" class="map" />
   </div>
 </template>
 
@@ -42,34 +71,48 @@ export default {
 
 <style scoped>
 .solutions {
-  padding: 139.5px;
+  padding: 89.5px;
   text-align: center;
 }
 
 .stats {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 2rem;
+  margin-bottom: 150px;
 }
 
 .stat {
   text-align: center;
+  border-top: 1.33px solid #000000;
+  min-width: 360px;
 }
 
 .stat h2 {
   font-size: 36px;
   color: #000000;
   font-family: "Poppins", sans-serif;
+  text-align: left;
 }
 
 .stat p {
-  font-size: 1.5rem;
-  color: #4a5568;
+  text-align: left;
+}
+
+.stat span {
+  font-size: 66.67px;
+  color: #000000;
+}
+
+.stat span.note {
+  font-size: 17.33px;
+  color: #000000;
+  vertical-align: top;
 }
 
 .description {
   margin: 0 auto;
   text-align: left;
+  padding: 89.5px;
 }
 
 .description p {
@@ -83,5 +126,10 @@ export default {
 .description em {
   font-style: italic;
   color: #1e1e1e;
+}
+
+.map {
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 </style>

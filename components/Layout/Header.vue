@@ -22,6 +22,7 @@ export default {
 .header {
   background-image: url("/images/header/bg.gif");
   padding: 89.5px;
+  background-size: cover;
 }
 
 .header-content {
