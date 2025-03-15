@@ -37,7 +37,7 @@ export default {
 .header-subtitle {
   font-size: 112px;
   color: #ffffff;
-  margin-top: 300px;
+  margin-top: 455px;
   font-family: "Gentium Book Basic", serif;
 }
 
