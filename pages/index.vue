@@ -3,6 +3,7 @@
     <Nuxt />
     <Header />
     <Solutions />
+    <Mission />
     <History />
     <Target />
     <Partner />
@@ -15,6 +16,7 @@
 <script>
 import Header from "~/components/Layout/Header.vue";
 import Solutions from "~/components/Home/Solutions.vue";
+import Mission from "~/components/Home/Mission.vue";
 import History from "~/components/Home/History.vue";
 import Target from "~/components/Home/Target.vue";
 import Partner from "~/components/Home/Partner.vue";
@@ -26,6 +28,7 @@ export default {
   components: {
     Header,
     Solutions,
+    Mission,
     History,
     Target,
     Partner,
