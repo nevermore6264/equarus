@@ -130,6 +130,6 @@ export default {
 
 .map {
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 </style>
