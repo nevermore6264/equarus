@@ -5,6 +5,7 @@
     <Solutions />
     <Mission />
     <Galleria />
+    <Culture />
     <History />
     <Target />
     <Partner />
@@ -19,6 +20,7 @@ import Header from "~/components/Layout/Header.vue";
 import Solutions from "~/components/Home/Solutions.vue";
 import Mission from "~/components/Home/Mission.vue";
 import Galleria from "~/components/Home/Galleria.vue";
+import Culture from "~/components/Home/Culture.vue";
 import History from "~/components/Home/History.vue";
 import Target from "~/components/Home/Target.vue";
 import Partner from "~/components/Home/Partner.vue";
@@ -32,6 +34,7 @@ export default {
     Solutions,
     Mission,
     Galleria,
+    Culture,
     History,
     Target,
     Partner,

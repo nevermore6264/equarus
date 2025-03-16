@@ -1,22 +1,22 @@
 <template>
-  <div class="history">
-    <p class="title">Lịch sử phát triển</p>
+  <div class="culture">
+    <p class="title">Văn hoá</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
       <i class="pi pi-arrow-down-left" style="color: #ffffff"></i>
     </div>
-    <p class="subtitle"></p>
+    <p class="subtitle">Tổ Chức Hiệu Suất Cao</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "History",
+  name: "Culture",
 };
 </script>
 
 <style scoped>
-.history {
+.culture {
   padding: 89.5px;
   background-color: #0d0d0d;
 }
@@ -29,7 +29,7 @@ export default {
 
 .subtitle {
   font-size: 24px;
-  color: #343434;
+  color: #00dbf4;
   margin-bottom: 100px;
   font-family: "Inter", sans-serif;
 }
