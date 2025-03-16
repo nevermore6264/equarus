@@ -109,13 +109,14 @@ export default {
 }
 
 .join-us {
-  margin-top: 100px;
+  margin-top: 200px;
   background-image: url("/images/join_us.png");
   background-size: cover;
   text-align: center;
   height: 866px;
   border-radius: 13.33px;
   position: relative;
+  margin-bottom: 70px;
 }
 
 .get-started-button {
