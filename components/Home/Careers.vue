@@ -44,8 +44,7 @@
     </div>
 
     <div class="join-us">
-      <img src="~/public/images/join_us.png" alt="Join Us" class="join-us-image" />
-      <button class="get-started-button">Get started</button>
+      <button class="get-started-button">JOIN OUR TEAM</button>
     </div>
   </div>
 </template>
@@ -110,27 +109,26 @@ export default {
 }
 
 .join-us {
-  position: relative;
   margin-top: 100px;
+  background-image: url("/images/join_us.png");
+  background-size: cover;
   text-align: center;
-}
-
-.join-us-image {
-  max-width: 100%;
-  height: auto;
+  height: 866px;
+  border-radius: 13.33px;
+  position: relative;
 }
 
 .get-started-button {
   position: absolute;
   bottom: 100px;
   left: 45px;
-  padding: 16px 44px;
-  font-size: 15px;
+  padding: 24.5px 70px;
+  font-size: 20px;
   font-family: "Lexend Zetta", sans-serif;
   color: #000000;
   background-color: #D9D9D9;
   border: none;
-  border-radius: 30px;
+  border-radius: 40px;
   cursor: pointer;
   text-transform: uppercase;
 }
