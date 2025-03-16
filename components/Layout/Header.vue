@@ -1,11 +1,13 @@
 <template>
   <header class="header" id="header">
     <div class="header-content">
-      <img
-        src="~/public/images/company.png"
-        alt="Logo"
-        class="logo header-title"
-      />
+      <NuxtLink to="/">
+        <img
+          src="~/public/images/company.png"
+          alt="Logo"
+          class="logo header-title"
+        />
+      </NuxtLink>
       <p class="header-subtitle">Building Global Brands</p>
       <p class="header-owner">Owned By Vietnamese People.</p>
     </div>
@@ -27,11 +29,13 @@ export default {
 
 .header-content {
   margin: 0 auto;
+  text-align: left;
 }
 
 .header-title {
   width: 192px;
   height: 39px;
+  cursor: pointer;
 }
 
 .header-subtitle {

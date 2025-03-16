@@ -5,8 +5,7 @@
       <div class="left">
         <span class="navbar-item" @click="scrollToHeader">About</span>
         <span class="navbar-item" @click="scrollToCareers">Careers</span>
-
-        <span class="navbar-item">Work</span>
+        <NuxtLink to="/work" class="navbar-item">Work</NuxtLink>
       </div>
       <div class="right">
         <p class="city">Hanoi</p>
@@ -160,6 +159,9 @@ export default {
 .navbar-item {
   font-size: 30.47px;
   font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .navbar-item:hover {
