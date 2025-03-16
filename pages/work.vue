@@ -1,19 +1,21 @@
 <template>
   <div>
     <Nuxt />
-    <Header />
-
+    <HeaderWork />
+    <Galleria />
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from "~/components/Layout/Header.vue";
+import HeaderWork from "~/components/Layout/HeaderWork.vue";
+import Galleria from "~/components/Home/Galleria.vue";
 import Footer from "~/components/Layout/Footer.vue";
 
 export default {
   components: {
-    Header,
+    HeaderWork,
+    Galleria,
     Footer,
   },
 };
