@@ -6,7 +6,7 @@
       :numVisible="1"
       :showThumbnails="false"
       :showIndicators="false"
-      containerStyle="margin: auto;"
+      containerStyle="max-width: 1252px; margin: auto;"
     >
       <template #item="slotProps">
         <img
@@ -19,11 +19,10 @@
 
     <div class="thumbnail-container">
       <div
-        v-for="(image, index) in images"
+        v-for="(image, index) in filteredThumbnails"
         :key="index"
         class="thumbnail"
-        :class="{ active: activeIndex === index }"
-        @click="activeIndex = index"
+        @click="activeIndex = getOriginalIndex(index)"
       >
         <img
           :src="image.thumbnailImageSrc"
@@ -64,6 +63,25 @@ export default {
       ],
     };
   },
+  computed: {
+    // Lọc ra các thumbnail không phải là ảnh đang được chọn
+    filteredThumbnails() {
+      return this.images.filter((_, index) => index !== this.activeIndex);
+    },
+  },
+  methods: {
+    // Lấy index gốc của ảnh trong mảng `images`
+    getOriginalIndex(filteredIndex) {
+      let count = 0;
+      for (let i = 0; i < this.images.length; i++) {
+        if (i !== this.activeIndex) {
+          if (count === filteredIndex) return i;
+          count++;
+        }
+      }
+      return 0;
+    },
+  },
 };
 </script>
 
@@ -88,18 +106,13 @@ export default {
   height: 256px; /* Cố định chiều cao */
   overflow: hidden; /* Ẩn phần thừa của ảnh */
   display: flex;
-  align-items: center;
   justify-content: center;
   border-radius: 13.33px;
 }
 
-.thumbnail.active {
-  border-color: #00dbf4;
-}
-
 .thumbnail img {
-  width: 100%; /* Ảnh sẽ lấp đầy container */
-  height: 100%; /* Ảnh sẽ lấp đầy container */
-  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>
