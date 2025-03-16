@@ -61,8 +61,16 @@ export default {
 }
 
 .text-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   opacity: 1;
   transition: opacity 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 999;
 }
 
 .text-container.hidden {
@@ -70,16 +78,16 @@ export default {
 }
 
 .text-line {
-  font-size: 24px;
-  color: #000000; /* Màu chữ */
-  margin: 5px 0;
+  font-size: 53.33px;
+  color: #1e1e1e;
+  margin: 10px 0;
   font-family: "Gentium Book Basic", serif;
+  text-align: center;
 }
 
-/* Hiệu ứng khi scroll */
 .header-work.scrolled {
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.9); /* Màu nền khi scroll */
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .header-work.scrolled .text-container {
