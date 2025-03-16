@@ -6,13 +6,13 @@
       :numVisible="1"
       :showThumbnails="false"
       :showIndicators="false"
-      containerStyle="max-width: 1252px; margin: auto;"
+      containerStyle="max-width: 1260px; margin: 100px auto auto auto;"
     >
       <template #item="slotProps">
         <img
           :src="slotProps.item.itemImageSrc"
           :alt="slotProps.item.alt"
-          style="width: 100%; height: auto"
+          class="main-image"
         />
       </template>
     </Galleria>
@@ -31,6 +31,8 @@
         />
       </div>
     </div>
+
+    <div class="divider"></div>
   </div>
 </template>
 
@@ -102,9 +104,9 @@ export default {
   cursor: pointer;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
-  width: 408px; /* Cố định chiều rộng */
-  height: 256px; /* Cố định chiều cao */
-  overflow: hidden; /* Ẩn phần thừa của ảnh */
+  width: 408px;
+  height: 256px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   border-radius: 13.33px;
@@ -114,5 +116,18 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.main-image {
+  border-radius: 13.33px;
+  width: 100%;
+  height: auto;
+}
+
+.divider {
+  width: 1260px;
+  height: 1.33px;
+  background-color: #000000;
+  margin: 30px auto;
 }
 </style>
