@@ -5,6 +5,7 @@
       <div class="left">
         <span class="navbar-item">About</span>
         <span class="navbar-item">Careers</span>
+        <span class="navbar-item">Work</span>
       </div>
       <div class="right">
         <p class="city">Hanoi</p>
@@ -62,11 +63,6 @@ export default {
   padding: 50px;
 }
 
-.row:first-child {
-  margin-bottom: 25px;
-}
-
-/* Style chung cho các dòng */
 .row {
   display: flex;
   justify-content: space-between;
@@ -74,13 +70,12 @@ export default {
   margin-bottom: 50px;
 }
 
-/* Style cho phần bên trái và bên phải */
 .left {
-  flex: 6; /* Chiếm 60% không gian */
+  flex: 6;
 }
 
 .right {
-  flex: 4; /* Chiếm 40% không gian */
+  flex: 4;
 }
 
 .left {
@@ -91,71 +86,68 @@ export default {
   text-align: left;
 }
 
-/* Style cho navbar */
 .navbar .left span {
   margin-right: 1rem;
 }
 
-/* Style cho description */
 .description h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
 }
 
-/* Style cho button */
 .contact .left .p-button-outlined {
   margin: 0;
 }
 
-/* Style cho logo */
 .logo {
   width: 318px; /* Điều chỉnh kích thước logo */
   height: auto;
 }
 
-/* Style cho thông tin công ty */
 .company .left p {
   margin: 0.25rem 0;
 }
 
 .btn-join-team {
-  color: #ffffff; /* Màu chữ */
-  border: 2px solid #828282; /* Viền */
-  border-radius: 25px; /* Bo góc */
-  padding: 16px 44px; /* Khoảng cách bên trong */
-  font-size: 15px; /* Độ đậm của chữ */
+  color: #ffffff;
+  border: 2px solid #828282;
+  border-radius: 40px;
+  padding: 25.5px 97px;
+  font-size: 20px;
   font-family: "Lexend Zetta", sans-serif;
 }
 
 .company-name {
-  font-size: 24px;
+  font-size: 25.78px;
 }
 
 .copyright {
-  font-size: 14px;
+  font-size: 11.72px;
+  margin-top: 15px !important;
 }
 
 .email,
 .phone,
 .address {
-  font-size: 17px;
+  font-size: 16.41px;
 }
 
 .city {
-  font-size: 35px;
+  font-size: 30.47px;
 }
 
 .content {
   font-weight: bold;
-  font-size: 34px;
+  font-size: 37.5px;
 }
 
 .navbar-item {
-  font-size: 25px;
+  font-size: 30.47px;
+  font-weight: 300;
 }
 
-.navbar .left span:last-child {
-  margin-left: 30%; /* Đẩy "Careers" về phía bên phải */
+.navbar .left span {
+  margin-right: 10%;
 }
 </style>
