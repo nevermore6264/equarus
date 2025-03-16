@@ -19,6 +19,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 label {
