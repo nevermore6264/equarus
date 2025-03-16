@@ -17,8 +17,8 @@ export default {
   data() {
     return {
       smallImages: [
-        "/images/work/2.png",
         "/images/work/3.png",
+        "/images/work/2.png",
         "/images/work/4.png",
         "/images/work/5.png",
         "/images/work/6.png",

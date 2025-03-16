@@ -67,7 +67,6 @@ export default {
 }
 
 .logo-container {
-  margin-bottom: 20px;
   height: 100px;
   background-color: #ffffff;
 }

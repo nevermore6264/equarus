@@ -1,13 +1,20 @@
 <template>
   <div>
-    
+    <h2 class="title">Brand</h2>
   </div>
 </template>
 
-<script lang="ts" setup>
-
+<script>
+export default {
+  name: "Title",
+};
 </script>
 
-<style>
-
+<style scoped>
+.title {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 80vh;
+}
 </style>
