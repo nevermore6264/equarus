@@ -3,8 +3,9 @@
     <!-- Dòng 1: Navbar -->
     <div class="row navbar">
       <div class="left">
-        <span class="navbar-item">About</span>
-        <span class="navbar-item">Careers</span>
+        <span class="navbar-item" @click="scrollToHeader">About</span>
+        <span class="navbar-item" @click="scrollToCareers">Careers</span>
+
         <span class="navbar-item">Work</span>
       </div>
       <div class="right">
@@ -53,6 +54,20 @@
 <script>
 export default {
   name: "Footer",
+  methods: {
+    scrollToHeader() {
+      const header = document.getElementById("header");
+      if (header) {
+        header.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+    scrollToCareers() {
+      const careers = document.getElementById("careers");
+      if (careers) {
+        careers.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+  },
 };
 </script>
 
@@ -101,7 +116,7 @@ export default {
 }
 
 .logo {
-  width: 318px; /* Điều chỉnh kích thước logo */
+  width: 318px;
   height: auto;
 }
 
@@ -147,7 +162,11 @@ export default {
   font-weight: 300;
 }
 
+.navbar-item:hover {
+  text-decoration: underline;
+}
+
 .navbar .left span {
-  margin-right: 10%;
+  margin-right: 15%;
 }
 </style>

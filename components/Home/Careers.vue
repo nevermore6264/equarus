@@ -1,5 +1,5 @@
 <template>
-  <div class="careers">
+  <div class="careers" id="careers">
     <p class="title">Careers</p>
     <!-- Thêm thẻ div với gạch chân và icon -->
     <div class="underline-container">
