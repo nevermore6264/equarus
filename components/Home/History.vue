@@ -90,7 +90,11 @@ export default {
   gap: 93px;
   margin: 0 auto;
   background-image: url("/images/timeline.svg");
-  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px;
+  width: 100%;
 }
 
 .row {
