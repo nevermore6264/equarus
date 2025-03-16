@@ -27,12 +27,12 @@ export default {
   methods: {
     handleScroll() {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > 100) {
-        // Khi scroll xuống quá 100px
+      if (scrollPosition > 300) {
         this.isScrolled = true;
       } else {
         this.isScrolled = false;
       }
+      console.log("isScrolled:", this.isScrolled); // Debug
     },
   },
 };
@@ -44,7 +44,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: transparent; /* Nền trong suốt */
   z-index: 1000;
   padding: 20px;
   text-align: center;
@@ -61,6 +61,9 @@ export default {
 }
 
 .text-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -68,8 +71,8 @@ export default {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  transition: opacity 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.9);
+  transition: opacity 0.5s ease; /* Tăng thời gian transition */
+  background-color: #ffffff;
   z-index: 999;
 }
 
@@ -83,6 +86,7 @@ export default {
   margin: 10px 0;
   font-family: "Gentium Book Basic", serif;
   text-align: center;
+  transition: opacity 0.5s ease; /* Thêm transition cho chữ */
 }
 
 .header-work.scrolled {
