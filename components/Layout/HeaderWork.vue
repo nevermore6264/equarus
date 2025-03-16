@@ -42,18 +42,20 @@ export default {
   height: 100vh; /* Chiều cao 100% khung hình */
   background-color: transparent;
   z-index: 1000;
-  padding: 20px;
   text-align: center;
   transition: all 0.3s ease;
 }
 
 .logo-container {
   margin-bottom: 20px;
+  height: 100px;
+  background-color: #ffffff;
 }
 
 .logo {
   width: 132.39px;
   height: 81.33px;
+  margin-top: 20px;
 }
 
 .text-container {
@@ -78,10 +80,6 @@ export default {
   margin: 10px 0;
   font-family: "Gentium Book Basic", serif;
   text-align: center;
-}
-
-.header-work.scrolled {
-  padding: 10px;
 }
 
 .header-work.scrolled .text-container {
