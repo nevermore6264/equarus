@@ -1,8 +1,11 @@
 <template>
   <header class="header-work">
     <div class="logo-container">
-      <img src="~/public/images/company-hoz.png" alt="Logo" class="logo" />
+      <NuxtLink to="/">
+        <img src="~/public/images/company-hoz.png" alt="Logo" class="logo" />
+      </NuxtLink>
     </div>
+
     <div
       class="text-container"
       :style="{ opacity: textOpacity, visibility: textVisible }"

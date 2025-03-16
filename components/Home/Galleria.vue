@@ -66,13 +66,11 @@ export default {
     };
   },
   computed: {
-    // Lọc ra các thumbnail không phải là ảnh đang được chọn
     filteredThumbnails() {
       return this.images.filter((_, index) => index !== this.activeIndex);
     },
   },
   methods: {
-    // Lấy index gốc của ảnh trong mảng `images`
     getOriginalIndex(filteredIndex) {
       let count = 0;
       for (let i = 0; i < this.images.length; i++) {
