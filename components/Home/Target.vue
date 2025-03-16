@@ -13,7 +13,7 @@
           <td class="icon">
             <i
               class="pi pi-arrow-up"
-              style="color: #00dbf4; font-size: 48px"
+              style="color: #00dbf4; font-size: 37px"
             ></i>
           </td>
           <td class="content">
@@ -26,7 +26,7 @@
           <td class="icon">
             <i
               class="pi pi-arrow-up"
-              style="color: #00dbf4; font-size: 48px"
+              style="color: #00dbf4; font-size: 37px"
             ></i>
           </td>
           <td class="content">
@@ -51,13 +51,13 @@ export default {
 }
 
 .title {
-  font-size: 48px;
+  font-size: 53.91px;
   font-family: "Inter", sans-serif;
   color: #ffffff;
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 25.78px;
   color: #343434;
   margin-bottom: 100px;
   font-family: "Inter", sans-serif;
@@ -98,15 +98,16 @@ export default {
 }
 
 .target-table .content {
-  font-size: 48px;
+  font-size: 51.56px;
   font-family: "Gentium Book Basic", serif;
   color: #d9d9d9;
-  padding-left: 20px;
+  padding-left: 100px;
   font-weight: 300;
+  line-height: 80px;
 }
 
 .target-table .year {
-  font-size: 64px;
+  font-size: 70.31px;
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   width: 31%;
@@ -114,6 +115,6 @@ export default {
 }
 
 .target-table td {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 </style>

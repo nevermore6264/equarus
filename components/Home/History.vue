@@ -56,13 +56,13 @@ export default {
 }
 
 .title {
-  font-size: 48px;
+  font-size: 53.91px;
   font-family: "Inter", sans-serif;
   color: #ffffff;
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 25.78px;
   color: #343434;
   margin-bottom: 100px;
   font-family: "Inter", sans-serif;
@@ -87,8 +87,10 @@ export default {
 .table {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 93px;
   margin: 0 auto;
+  background-image: url("/images/timeline.svg");
+  background-size: cover;
 }
 
 .row {

@@ -90,12 +90,12 @@ export default {
 }
 
 .title {
-  font-size: 48px;
+  font-size: 53.91px;
   font-family: "Inter", sans-serif;
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 25.78px;
   color: #343434;
   margin-bottom: 100px;
   font-family: "Inter", sans-serif;
