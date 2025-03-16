@@ -6,6 +6,35 @@
       <i class="pi pi-arrow-down-left" style="color: #ffffff"></i>
     </div>
     <p class="subtitle">Tổ Chức Hiệu Suất Cao</p>
+
+    <div class="content">
+      <div class="col">
+        <p class="description">
+          Equarus định hình là tổ chức hiệu suất cao, nơi mỗi cá nhân cùng hướng
+          đến mục tiêu chung, chia sẻ giá trị và không ngừng phát triển.
+        </p>
+        <img src="~/public/images/culture1.png" alt="Culture" />
+      </div>
+      <div class="col">
+        <p class="principle">
+          Với hai giá trị cốt lõi: Trọn vẹn & Hoàn tất – Cam kết theo đuổi mục
+          tiêu đến cùng, đảm bảo chất lượng và hiệu quả tối ưu trong mọi công
+          việc. Better than Yesterday – Liên tục cải tiến, phát triển bản thân
+          và nâng cao năng lực mỗi ngày.
+        </p>
+      </div>
+      <div class="col">
+        <p class="conclusion">
+          Chúng tôi tin rằng thành công của tập thể đến từ việc đặt đúng người
+          vào đúng vị trí, nhờ đó mỗi cá nhân phát huy tối đa khả năng và thế
+          mạnh của mình. Equarus không ngừng tìm kiếm những nhân sự phù hợp với
+          định hướng để cùng nhau góp phần đưa hàng Việt vươn xa toàn cầu.
+        </p>
+      </div>
+      <div class="col">
+        <img src="~/public/images/culture2.png" alt="Culture" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -19,6 +48,7 @@ export default {
 .culture {
   padding: 89.5px;
   background-color: #0d0d0d;
+  color: #ffffff;
 }
 
 .title {
@@ -48,5 +78,32 @@ export default {
 .pi-arrow-down-left {
   margin-left: 0.5rem;
   font-size: 1.5rem;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.principles {
+  margin-bottom: 30px;
+}
+
+.principle {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.conclusion {
+  font-size: 18px;
+  line-height: 1.6;
 }
 </style>
