@@ -1,9 +1,12 @@
 <template>
-  <header class="header-work" :class="{ scrolled: isScrolled }">
+  <header class="header-work">
     <div class="logo-container">
       <img src="~/public/images/company-hoz.png" alt="Logo" class="logo" />
     </div>
-    <div class="text-container" :class="{ hidden: isScrolled }">
+    <div
+      class="text-container"
+      :style="{ opacity: textOpacity, visibility: textVisible }"
+    >
       <p class="text-line">Wherever Vietnamese Goods Go,</p>
       <p class="text-line">The Border of Vietnam Follows.</p>
     </div>
@@ -15,7 +18,8 @@ export default {
   name: "HeaderWork",
   data() {
     return {
-      isScrolled: false,
+      textOpacity: 1,
+      textVisible: "visible",
     };
   },
   mounted() {
@@ -27,7 +31,20 @@ export default {
   methods: {
     handleScroll() {
       const scrollPosition = window.scrollY;
-      this.isScrolled = scrollPosition > 300;
+      const fadeStart = 150; // Bắt đầu làm mờ từ 150px
+      const fadeEnd = 300; // Ẩn hoàn toàn khi cuộn đến 300px
+
+      if (scrollPosition < fadeStart) {
+        this.textOpacity = 1;
+        this.textVisible = "visible";
+      } else if (scrollPosition < fadeEnd) {
+        // Tính toán độ mờ dần
+        this.textOpacity =
+          1 - (scrollPosition - fadeStart) / (fadeEnd - fadeStart);
+      } else {
+        this.textOpacity = 0;
+        this.textVisible = "hidden";
+      }
     },
   },
 };
@@ -39,7 +56,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* Chiều cao 100% khung hình */
+  height: 100vh;
   background-color: transparent;
   z-index: 1000;
   text-align: center;
@@ -63,15 +80,10 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 1;
-  transition: opacity 0.5s ease;
   background-color: #ffffff;
   z-index: 999;
-  height: 100%; /* Chiều cao 100% khung hình */
-}
-
-.text-container.hidden {
-  opacity: 0;
+  height: 100%;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .text-line {
@@ -80,9 +92,5 @@ export default {
   margin: 10px 0;
   font-family: "Gentium Book Basic", serif;
   text-align: center;
-}
-
-.header-work.scrolled .text-container {
-  opacity: 0;
 }
 </style>
