@@ -7,6 +7,7 @@
     </div>
     <p class="subtitle">Tổ Chức Hiệu Suất Cao</p>
 
+    <!-- Phần nội dung chia thành 4 cột -->
     <div class="content">
       <div class="col">
         <p class="description">
@@ -80,30 +81,32 @@ export default {
   font-size: 1.5rem;
 }
 
+/* Phần nội dung chia thành 4 cột */
 .content {
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 92px;
   margin: 0 auto;
-  text-align: left;
 }
 
-.description {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 30px;
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.principles {
-  margin-bottom: 30px;
+.col img {
+  width: 100%;
+  height: auto;
+  border-radius: 13.33px;
 }
 
-.principle {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
+.description,
+.principle,
 .conclusion {
-  font-size: 18px;
+  font-size: 30.47px;
   line-height: 1.6;
+  color: #d9d9d9;
+  font-family: "Gentium Book Basic", serif;
 }
 </style>
