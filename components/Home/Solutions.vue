@@ -6,7 +6,12 @@
         <p>
           <i
             class="pi pi-arrow-up"
-            style="color: #00dbf4; font-size: 37px; vertical-align: super"
+            style="
+              color: #00dbf4;
+              font-size: 37px;
+              vertical-align: super;
+              margin-right: 10px;
+            "
           ></i>
           <span>4+</span>
           <span class="note">Brands</span>
@@ -17,7 +22,12 @@
         <p>
           <i
             class="pi pi-arrow-up"
-            style="color: #00dbf4; font-size: 37px; vertical-align: super"
+            style="
+              color: #00dbf4;
+              font-size: 37px;
+              vertical-align: super;
+              margin-right: 10px;
+            "
           ></i>
           <span>1000+</span>
           <span class="note">Products</span>
@@ -28,7 +38,12 @@
         <p>
           <i
             class="pi pi-arrow-up"
-            style="color: #00dbf4; font-size: 37px; vertical-align: super"
+            style="
+              color: #00dbf4;
+              font-size: 37px;
+              vertical-align: super;
+              margin-right: 10px;
+            "
           ></i>
           <span>3+</span>
           <span class="note">Channel</span>
@@ -39,7 +54,12 @@
         <p>
           <i
             class="pi pi-arrow-up"
-            style="color: #00dbf4; font-size: 37px; vertical-align: super"
+            style="
+              color: #00dbf4;
+              font-size: 37px;
+              vertical-align: super;
+              margin-right: 10px;
+            "
           ></i>
           <span>2M+</span>
           <span class="note">Orders</span>
