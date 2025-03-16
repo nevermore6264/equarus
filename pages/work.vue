@@ -17,6 +17,25 @@ import Image from "~/components/Home/Image.vue";
 import Footer from "~/components/Layout/Footer.vue";
 
 export default {
+  head() {
+    return {
+      title:
+        "Equarus Solutions - Building Global Brands Owned By Vietnamese People.",
+      htmlAttrs: {
+        lang: "en",
+      },
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Equarus Solutions is a global brand owned by Vietnamese people.",
+        },
+      ],
+    };
+  },
   components: {
     HeaderWork,
     Galleria,
