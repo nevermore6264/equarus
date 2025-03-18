@@ -151,5 +151,131 @@ export default {
 .map {
   margin-top: 100px;
   margin-bottom: 150px;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1366px) {
+  .solutions {
+    padding: 60px;
+  }
+
+  .stats {
+    margin-bottom: 100px;
+  }
+
+  .stat {
+    min-width: 250px;
+  }
+
+  .stat h2 {
+    font-size: 30px;
+  }
+
+  .stat span {
+    font-size: 50px;
+  }
+
+  .stat span.note {
+    font-size: 14px;
+  }
+
+  .description {
+    padding: 60px;
+  }
+
+  .description p {
+    font-size: 50px;
+  }
+
+  .map {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .solutions {
+    padding: 40px;
+  }
+
+  .stats {
+    flex-wrap: wrap; /* Cho phép các stat xuống dòng */
+    gap: 20px; /* Khoảng cách giữa các stat */
+    margin-bottom: 80px;
+  }
+
+  .stat {
+    min-width: 200px;
+    flex: 1 1 45%; /* Mỗi stat chiếm 45% chiều rộng */
+  }
+
+  .stat h2 {
+    font-size: 24px;
+  }
+
+  .stat span {
+    font-size: 40px;
+  }
+
+  .stat span.note {
+    font-size: 12px;
+  }
+
+  .description {
+    padding: 40px;
+  }
+
+  .description p {
+    font-size: 36px;
+  }
+
+  .map {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .solutions {
+    padding: 20px;
+  }
+
+  .stats {
+    flex-direction: column; /* Xếp các stat theo chiều dọc */
+    gap: 10px;
+    margin-bottom: 60px;
+  }
+
+  .stat {
+    min-width: 100%;
+    flex: 1 1 100%; /* Mỗi stat chiếm toàn bộ chiều rộng */
+  }
+
+  .stat h2 {
+    font-size: 20px;
+  }
+
+  .stat span {
+    font-size: 30px;
+  }
+
+  .stat span.note {
+    font-size: 10px;
+  }
+
+  .description {
+    padding: 20px;
+  }
+
+  .description p {
+    font-size: 24px;
+  }
+
+  .map {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
 }
 </style>

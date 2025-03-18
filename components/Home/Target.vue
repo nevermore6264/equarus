@@ -117,4 +117,94 @@ export default {
 .target-table td {
   padding-bottom: 100px;
 }
+
+/* Responsive Styles */
+@media (max-width: 1366px) {
+  .target {
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .target-table .content {
+    font-size: 40px;
+    padding-left: 80px;
+    line-height: 60px;
+  }
+
+  .target-table .year {
+    font-size: 50px;
+  }
+
+  .target-table td {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .target {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .target-table .content {
+    font-size: 30px;
+    padding-left: 60px;
+    line-height: 50px;
+  }
+
+  .target-table .year {
+    font-size: 40px;
+  }
+
+  .target-table td {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .target {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .target-table {
+    display: block;
+  }
+
+  .target-table tbody,
+  .target-table tr,
+  .target-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .target-table .content {
+    font-size: 20px;
+    padding-left: 0;
+    line-height: 30px;
+  }
+
+  .target-table .year {
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .target-table td {
+    padding-bottom: 40px;
+  }
+
+  .target-table .icon {
+    display: none; /* Ẩn icon trên màn hình nhỏ */
+  }
+}
 </style>

@@ -77,4 +77,83 @@ const images = [
   border-radius: 8px;
   padding: 0 20px;
 }
+
+/* Responsive Styles */
+@media (max-width: 1366px) {
+  .partner {
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 80px;
+  }
+
+  .partner-images {
+    height: 120px;
+  }
+
+  .partner-image {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partner {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+
+  .partner-images {
+    height: 100px;
+    flex-wrap: wrap; /* Cho phép các ảnh xuống dòng */
+    justify-content: center; /* Căn giữa các ảnh */
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+    padding: 10px; /* Thêm padding để tránh bị sát viền */
+  }
+
+  .partner-image {
+    padding: 0 10px;
+    max-width: 100px; /* Giảm kích thước ảnh */
+  }
+}
+
+@media (max-width: 480px) {
+  .partner {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .partner-images {
+    height: auto; /* Chiều cao tự động */
+    flex-direction: column; /* Xếp các ảnh theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa các ảnh */
+    padding: 20px; /* Thêm padding để tránh bị sát viền */
+  }
+
+  .partner-image {
+    padding: 0;
+    max-width: 80px; /* Giảm kích thước ảnh */
+  }
+}
 </style>
