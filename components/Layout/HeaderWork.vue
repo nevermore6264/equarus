@@ -103,4 +103,59 @@ export default {
   font-family: "Gentium Book Basic", serif;
   text-align: center;
 }
+
+/* Responsive Styles */
+@media (max-width: 1366px) {
+  .text-line {
+    font-size: 40px; /* Giảm kích thước font */
+  }
+
+  .logo {
+    width: 110px; /* Giảm kích thước logo */
+  }
+
+  .logo-container {
+    height: 70px; /* Giảm chiều cao logo container */
+  }
+
+  .text-container {
+    padding-top: 90px; /* Điều chỉnh padding-top */
+  }
+}
+
+@media (max-width: 768px) {
+  .text-line {
+    font-size: 30px; /* Giảm kích thước font */
+  }
+
+  .logo {
+    width: 90px; /* Giảm kích thước logo */
+  }
+
+  .logo-container {
+    height: 60px; /* Giảm chiều cao logo container */
+  }
+
+  .text-container {
+    padding-top: 80px; /* Điều chỉnh padding-top */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-line {
+    font-size: 20px; /* Giảm kích thước font */
+  }
+
+  .logo {
+    width: 70px; /* Giảm kích thước logo */
+  }
+
+  .logo-container {
+    height: 50px; /* Giảm chiều cao logo container */
+  }
+
+  .text-container {
+    padding-top: 70px; /* Điều chỉnh padding-top */
+  }
+}
 </style>
