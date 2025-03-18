@@ -52,4 +52,64 @@ export default {
   margin-top: 20px;
   font-family: "Gentium Book Basic", serif;
 }
+
+/* Responsive Styles */
+@media (max-width: 1366px) {
+  .header {
+    padding: 60px;
+  }
+
+  .header-subtitle,
+  .header-owner {
+    font-size: 80px;
+  }
+
+  .header-subtitle {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 40px;
+  }
+
+  .header-subtitle,
+  .header-owner {
+    font-size: 50px;
+  }
+
+  .header-subtitle {
+    margin-top: 200px;
+  }
+
+  .header-title {
+    width: 150px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header-subtitle,
+  .header-owner {
+    font-size: 30px;
+  }
+
+  .header-subtitle {
+    margin-top: 100px;
+  }
+
+  .header-title {
+    width: 120px;
+    height: 25px;
+  }
+
+  .header-content {
+    text-align: center;
+  }
+}
 </style>
