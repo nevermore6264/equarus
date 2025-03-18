@@ -64,18 +64,21 @@ const images = [
 
 .partner-images {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap; /* Cho phép các ảnh xuống dòng */
+  justify-content: center; /* Căn giữa các ảnh */
+  gap: 20px; /* Khoảng cách giữa các ảnh */
   margin: 0 auto;
   background-color: #000000;
   border-radius: 10px;
-  height: 140px;
+  padding: 20px; /* Thêm padding để tránh bị sát viền */
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng */
 }
 
 .partner-image {
   height: auto;
+  max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của container */
   border-radius: 8px;
-  padding: 0 20px;
+  object-fit: contain; /* Giữ tỷ lệ ảnh và không bị méo */
 }
 
 /* Responsive Styles */
@@ -94,11 +97,17 @@ const images = [
   }
 
   .partner-images {
-    height: 120px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .partner-images {
+    gap: 15px; /* Giảm khoảng cách giữa các ảnh */
   }
 
   .partner-image {
-    padding: 0 15px;
+    max-width: 150px; /* Giới hạn kích thước ảnh */
   }
 }
 
@@ -117,16 +126,11 @@ const images = [
   }
 
   .partner-images {
-    height: 100px;
-    flex-wrap: wrap; /* Cho phép các ảnh xuống dòng */
-    justify-content: center; /* Căn giữa các ảnh */
-    gap: 10px; /* Khoảng cách giữa các ảnh */
-    padding: 10px; /* Thêm padding để tránh bị sát viền */
+    padding: 10px;
   }
 
   .partner-image {
-    padding: 0 10px;
-    max-width: 100px; /* Giảm kích thước ảnh */
+    max-width: 120px; /* Giảm kích thước ảnh */
   }
 }
 
@@ -145,15 +149,12 @@ const images = [
   }
 
   .partner-images {
-    height: auto; /* Chiều cao tự động */
-    flex-direction: column; /* Xếp các ảnh theo chiều dọc */
-    gap: 20px; /* Khoảng cách giữa các ảnh */
-    padding: 20px; /* Thêm padding để tránh bị sát viền */
+    gap: 10px; /* Giảm khoảng cách giữa các ảnh */
+    padding: 10px;
   }
 
   .partner-image {
-    padding: 0;
-    max-width: 80px; /* Giảm kích thước ảnh */
+    max-width: 100px; /* Giảm kích thước ảnh */
   }
 }
 </style>
