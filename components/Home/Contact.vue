@@ -165,4 +165,100 @@ export default {
   text-transform: uppercase;
   margin-top: 20px;
 }
+
+/* Responsive styles */
+@media (max-width: 1366px) {
+  .careers {
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+
+  .contact-form {
+    margin-top: 70px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .submit-button {
+    padding: 20px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .careers {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .contact-form {
+    margin-top: 50px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .submit-button {
+    padding: 15px 25px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    margin-top: 30px;
+  }
+
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-input {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
 </style>

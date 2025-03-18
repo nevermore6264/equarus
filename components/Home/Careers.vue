@@ -9,36 +9,36 @@
     <p class="subtitle">Chức năng, nhiệm vụ phòng ban</p>
     <div class="departments">
       <div class="department">
-        <p class="title">R&D</p class="title">
+        <p class="title">R&D</p>
         <p class="desc">Nghiên cứu và phát triển sản phẩm mới</p>
       </div>
       <div class="department">
-        <p class="title">Digital Marketing</p class="title">
+        <p class="title">Digital Marketing</p>
         <p class="desc">Quản lý và triển khai các chiến dịch marketing trực tuyến</p>
       </div>
       <div class="department">
-        <p class="title">Product Design</p class="title">
+        <p class="title">Product Design</p>
         <p class="desc">Thiết kế và phát triển sản phẩm</p>
       </div>
       <div class="department">
-        <p class="title">Brand Marketing</p class="title">
+        <p class="title">Brand Marketing</p>
         <p class="desc">Xây dựng và phát triển thương hiệu</p>
       </div>
 
       <div class="department">
-        <p class="title">Supplychain</p class="title">
+        <p class="title">Supplychain</p>
         <p class="desc">Quản lý chuỗi cung ứng và vận hành kho hàng</p>
       </div>
       <div class="department">
-        <p class="title">Legal</p class="title">
+        <p class="title">Legal</p>
         <p class="desc">Quản lý các vấn đề pháp lý sản phẩm và tuân thủ quy định của sàn</p>
       </div>
       <div class="department">
-        <p class="title">HR</p class="title">
+        <p class="title">HR</p>
         <p class="desc">Quản lý nhân sự và phát triển đội ngũ</p>
       </div>
       <div class="department">
-        <p class="title">Finance</p class="title">
+        <p class="title">Finance</p>
         <p class="desc">Quản lý tài chính</p>
       </div>
     </div>
@@ -134,4 +134,127 @@ export default {
   text-transform: uppercase;
 }
 
+/* Responsive styles */
+@media (max-width: 1366px) {
+  .careers {
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+
+  .departments {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .department .title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .department .desc {
+    font-size: 20px;
+  }
+
+  .join-us {
+    margin-top: 150px;
+    height: 600px;
+  }
+
+  .get-started-button {
+    bottom: 80px;
+    left: 30px;
+    padding: 20px 50px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .careers {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .departments {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .department .title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .department .desc {
+    font-size: 18px;
+  }
+
+  .join-us {
+    margin-top: 100px;
+    height: 400px;
+  }
+
+  .get-started-button {
+    bottom: 60px;
+    left: 20px;
+    padding: 15px 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .departments {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .department .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .department .desc {
+    font-size: 16px;
+  }
+
+  .join-us {
+    margin-top: 50px;
+    height: 300px;
+  }
+
+  .get-started-button {
+    bottom: 40px;
+    left: 10px;
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+}
 </style>
