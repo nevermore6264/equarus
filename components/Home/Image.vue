@@ -82,7 +82,7 @@ export default {
 @media (max-width: 480px) {
   .image-gallery {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     max-width: 300px;
   }
 
