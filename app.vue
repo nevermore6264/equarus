@@ -12,8 +12,13 @@
 
 <style>
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
+}
+
+#__nuxt {
+  padding: 0px;
+  margin: 0px;
 }
 
 body {

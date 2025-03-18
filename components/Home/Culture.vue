@@ -14,7 +14,7 @@
           Equarus định hình là tổ chức hiệu suất cao, nơi mỗi cá nhân cùng hướng
           đến mục tiêu chung, chia sẻ giá trị và không ngừng phát triển.
         </p>
-        <img src="~/public/images/culture1.png" alt="Culture" />
+        <img src="~/public/images/culture1.jpg" alt="Culture" />
       </div>
       <div class="col">
         <p class="principle">
@@ -33,7 +33,7 @@
         </p>
       </div>
       <div class="col">
-        <img src="~/public/images/culture2.png" alt="Culture" />
+        <img src="~/public/images/culture2.jpg" alt="Culture" />
       </div>
     </div>
   </div>
@@ -97,7 +97,8 @@ export default {
 
 .col img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 13.33px;
 }
 

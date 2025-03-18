@@ -43,13 +43,13 @@ export default {
       activeIndex: 0,
       images: [
         {
-          itemImageSrc: "/images/galleria1.png",
-          thumbnailImageSrc: "/images/galleria1.png",
+          itemImageSrc: "/images/galleria1.jpg",
+          thumbnailImageSrc: "/images/galleria1.jpg",
           alt: "Image 1",
         },
         {
-          itemImageSrc: "/images/galleria2.png",
-          thumbnailImageSrc: "/images/galleria2.png",
+          itemImageSrc: "/images/galleria2.jpg",
+          thumbnailImageSrc: "/images/galleria2.jpg",
           alt: "Image 2",
         },
         {
@@ -58,8 +58,8 @@ export default {
           alt: "Image 3",
         },
         {
-          itemImageSrc: "/images/galleria4.png",
-          thumbnailImageSrc: "/images/galleria4.png",
+          itemImageSrc: "/images/galleria4.jpg",
+          thumbnailImageSrc: "/images/galleria4.jpg",
           alt: "Image 4",
         },
       ],
