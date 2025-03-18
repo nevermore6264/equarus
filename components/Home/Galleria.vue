@@ -95,6 +95,7 @@ export default {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .thumbnail {
@@ -123,9 +124,58 @@ export default {
 }
 
 .divider {
-  width: 1260px;
+  width: 100%;
+  max-width: 1260px;
   height: 1.33px;
   background-color: #000000;
   margin: 30px auto;
+}
+
+/* Responsive styles */
+@media (max-width: 1366px) {
+  .gallery {
+    padding: 60px;
+  }
+
+  .thumbnail {
+    width: 300px;
+    height: 180px;
+  }
+
+  .divider {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    padding: 40px;
+  }
+
+  .thumbnail {
+    width: 200px;
+    height: 120px;
+    margin: 5px;
+  }
+
+  .divider {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    padding: 20px;
+  }
+
+  .thumbnail {
+    width: 150px;
+    height: 90px;
+    margin: 5px;
+  }
+
+  .divider {
+    max-width: 90%;
+  }
 }
 </style>

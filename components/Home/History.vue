@@ -119,4 +119,105 @@ export default {
   line-height: 1.6;
   color: #ffffff;
 }
+
+/* Responsive styles */
+@media (max-width: 1366px) {
+  .history {
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+
+  .date {
+    font-size: 20px;
+  }
+
+  .content {
+    font-size: 24px;
+  }
+
+  .table {
+    gap: 60px;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .history {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .date {
+    font-size: 18px;
+  }
+
+  .content {
+    font-size: 20px;
+  }
+
+  .table {
+    gap: 40px;
+    min-height: 300px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .cell {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .history {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .date {
+    font-size: 16px;
+  }
+
+  .content {
+    font-size: 18px;
+  }
+
+  .table {
+    gap: 20px;
+    min-height: 200px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .cell {
+    padding: 5px;
+  }
+}
 </style>

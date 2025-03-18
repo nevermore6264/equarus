@@ -109,4 +109,82 @@ export default {
   color: #d9d9d9;
   font-family: "Gentium Book Basic", serif;
 }
+
+/* Responsive styles */
+@media (max-width: 1366px) {
+  .culture {
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  .description,
+  .principle,
+  .conclusion {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .culture {
+    padding: 40px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .description,
+  .principle,
+  .conclusion {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .culture {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .content {
+    gap: 20px;
+  }
+
+  .description,
+  .principle,
+  .conclusion {
+    font-size: 18px;
+  }
+}
 </style>
