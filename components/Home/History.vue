@@ -210,6 +210,7 @@ export default {
   .table {
     gap: 20px;
     min-height: 200px;
+    background: none;
   }
 
   .row {
