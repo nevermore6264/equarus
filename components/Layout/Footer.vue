@@ -171,4 +171,147 @@ export default {
 .navbar .left span {
   margin-right: 15%;
 }
+
+/* Responsive Styles */
+@media (max-width: 1366px) {
+  .footer {
+    padding: 40px;
+  }
+
+  .content {
+    font-size: 30px;
+  }
+
+  .navbar-item {
+    font-size: 25px;
+  }
+
+  .city {
+    font-size: 25px;
+  }
+
+  .btn-join-team {
+    padding: 20px 80px;
+    font-size: 18px;
+  }
+
+  .company-name {
+    font-size: 22px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+
+  .email,
+  .phone,
+  .address {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .left,
+  .right {
+    text-align: center;
+    flex: 1;
+  }
+
+  .navbar .left span {
+    margin-right: 0;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .content {
+    font-size: 25px;
+  }
+
+  .navbar-item {
+    font-size: 20px;
+  }
+
+  .city {
+    font-size: 20px;
+  }
+
+  .btn-join-team {
+    padding: 15px 60px;
+    font-size: 16px;
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+
+  .copyright {
+    font-size: 9px;
+  }
+
+  .email,
+  .phone,
+  .address {
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .content {
+    font-size: 20px;
+  }
+
+  .navbar-item {
+    font-size: 16px;
+  }
+
+  .city {
+    font-size: 16px;
+  }
+
+  .btn-join-team {
+    padding: 10px 40px;
+    font-size: 14px;
+  }
+
+  .company-name {
+    font-size: 16px;
+  }
+
+  .copyright {
+    font-size: 8px;
+  }
+
+  .email,
+  .phone,
+  .address {
+    font-size: 10px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
 </style>
