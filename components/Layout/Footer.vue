@@ -275,6 +275,12 @@ export default {
 }
 
 @media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
   .footer {
     padding: 20px;
   }
@@ -312,6 +318,7 @@ export default {
 
   .logo {
     width: 150px;
+    margin-top: 20px;
   }
 }
 </style>
