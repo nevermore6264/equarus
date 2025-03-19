@@ -96,7 +96,7 @@ export default {
 }
 
 .contact {
-  margin-bottom: 42px;
+  margin-bottom: 50px;
 }
 
 .left {
@@ -131,25 +131,27 @@ export default {
 }
 
 .logo {
-  width: 318px;
+  width: 335.62px;
   height: auto;
 }
 
 .company .left p {
-  margin: 0.25rem 0;
+  margin: 0.45rem 0;
 }
 
 .btn-join-team {
   color: #ffffff;
   border: 2px solid #828282;
   border-radius: 40px;
-  padding: 25.5px 97px;
+  padding: 25.5px 72px;
   font-size: 20px;
   font-family: "Lexend Zetta", sans-serif;
+  letter-spacing: -0.8px;
 }
 
 .company-name {
   font-size: 25.78px;
+  letter-spacing: -0.8px;
 }
 
 .copyright {
