@@ -133,7 +133,7 @@ export default {
 
   .subtitle {
     font-size: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 220px;
   }
 
   .date {

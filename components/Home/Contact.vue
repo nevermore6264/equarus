@@ -92,6 +92,7 @@ export default {
 .title {
   font-size: 53.91px;
   font-family: "Inter", sans-serif;
+  margin-bottom: 220px;
 }
 
 .subtitle {
@@ -179,7 +180,6 @@ export default {
 
   .subtitle {
     font-size: 20px;
-    margin-bottom: 70px;
   }
 
   .contact-form {

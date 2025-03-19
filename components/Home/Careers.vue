@@ -74,18 +74,19 @@ export default {
   color: #343434;
   margin-bottom: 100px;
   font-family: "Inter", sans-serif;
+  margin-bottom: 220px;
 }
 
 .departments {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 72.6px;
 }
 
 .department .title {
-  font-size: 35px;
-  margin-bottom: 30px;
+  font-size: 46.67px;
+  margin-bottom: 45px;
   color: #000000;
   font-family: "Gentium Book Basic", serif;
 }
@@ -94,6 +95,7 @@ export default {
   font-size: 25px;
   color: #616161;
   font-family: "Gentium Book Basic", serif;
+  line-height: 48px;
 }
 
 .underline-container {
@@ -114,7 +116,6 @@ export default {
 }
 
 .join-us {
-  margin-top: 200px;
   background-image: url("/images/join_us.png");
   background-size: cover;
   text-align: center;
@@ -154,7 +155,6 @@ export default {
 
   .subtitle {
     font-size: 20px;
-    margin-bottom: 70px;
   }
 
   .departments {
