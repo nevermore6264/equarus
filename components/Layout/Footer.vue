@@ -74,14 +74,29 @@ export default {
 .footer {
   background-color: #000000;
   color: #ffffff;
-  padding: 50px;
+  padding: 52px 123px;
+}
+
+.navbar {
+  margin-bottom: 66px;
+}
+
+.description {
+  margin-bottom: 42px;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+}
+
+.company {
+  margin-bottom: 55px;
+}
+
+.contact {
+  margin-bottom: 42px;
 }
 
 .left {
@@ -89,7 +104,7 @@ export default {
 }
 
 .right {
-  flex: 4;
+  flex: 2.14;
 }
 
 .left {
@@ -98,6 +113,7 @@ export default {
 
 .right {
   text-align: left;
+  letter-spacing: 0.9px;
 }
 
 .navbar .left span {
@@ -154,6 +170,8 @@ export default {
 .content {
   font-weight: bold;
   font-size: 37.5px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.8px;
 }
 
 .navbar-item {
@@ -169,7 +187,7 @@ export default {
 }
 
 .navbar .left span {
-  margin-right: 15%;
+  margin-right: 16.2%;
 }
 
 /* Responsive Styles */
