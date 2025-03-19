@@ -46,7 +46,7 @@ export default {
 
 <style scoped>
 .target {
-  padding: 89.5px;
+  padding: 129px 119px;
   background-color: #0d0d0d;
 }
 

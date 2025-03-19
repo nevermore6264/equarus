@@ -1,5 +1,5 @@
 <template>
-  <div class="careers">
+  <div class="contact">
     <p class="title">Contact</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
@@ -85,8 +85,8 @@ export default {
 </script>
 
 <style scoped>
-.careers {
-  padding: 89.5px;
+.contact {
+  padding: 129px 119px;
 }
 
 .title {

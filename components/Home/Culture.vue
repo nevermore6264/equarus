@@ -47,7 +47,7 @@ export default {
 
 <style scoped>
 .culture {
-  padding: 89.5px;
+  padding: 129px 119px;
   background-color: #0d0d0d;
   color: #ffffff;
 }

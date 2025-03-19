@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .mission {
-  padding: 89.5px;
+  padding: 129px 119px;
   text-align: center;
 }
 

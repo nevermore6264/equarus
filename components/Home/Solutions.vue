@@ -91,7 +91,7 @@ export default {
 
 <style scoped>
 .solutions {
-  padding: 89.5px;
+  padding: 129px 119px;
   text-align: center;
 }
 
@@ -132,7 +132,7 @@ export default {
 .description {
   margin: 0 auto;
   text-align: left;
-  padding: 89.5px;
+  padding: 129px 119px;
 }
 
 .description p {

@@ -14,7 +14,9 @@
       </div>
       <div class="department">
         <p class="title">Digital Marketing</p>
-        <p class="desc">Quản lý và triển khai các chiến dịch marketing trực tuyến</p>
+        <p class="desc">
+          Quản lý và triển khai các chiến dịch marketing trực tuyến
+        </p>
       </div>
       <div class="department">
         <p class="title">Product Design</p>
@@ -31,7 +33,9 @@
       </div>
       <div class="department">
         <p class="title">Legal</p>
-        <p class="desc">Quản lý các vấn đề pháp lý sản phẩm và tuân thủ quy định của sàn</p>
+        <p class="desc">
+          Quản lý các vấn đề pháp lý sản phẩm và tuân thủ quy định của sàn
+        </p>
       </div>
       <div class="department">
         <p class="title">HR</p>
@@ -57,19 +61,19 @@ export default {
 
 <style scoped>
 .careers {
-  padding: 89.5px;
+  padding: 129px 119px;
 }
 
 .title {
   font-size: 53.91px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .subtitle {
   font-size: 25.78px;
   color: #343434;
   margin-bottom: 100px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .departments {
@@ -83,13 +87,13 @@ export default {
   font-size: 35px;
   margin-bottom: 30px;
   color: #000000;
-  font-family: 'Gentium Book Basic', serif;
+  font-family: "Gentium Book Basic", serif;
 }
 
 .department .desc {
   font-size: 25px;
   color: #616161;
-  font-family: 'Gentium Book Basic', serif;
+  font-family: "Gentium Book Basic", serif;
 }
 
 .underline-container {
@@ -100,7 +104,7 @@ export default {
 .underline {
   flex: 1;
   height: 2px;
-  background-color: #00DBF4;
+  background-color: #00dbf4;
 }
 
 .pi-arrow-down-left {
@@ -116,7 +120,6 @@ export default {
   height: 866px;
   border-radius: 13.33px;
   position: relative;
-  margin-bottom: 70px;
 }
 
 .get-started-button {
@@ -127,7 +130,7 @@ export default {
   font-size: 20px;
   font-family: "Lexend Zetta", sans-serif;
   color: #000000;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   border: none;
   border-radius: 40px;
   cursor: pointer;

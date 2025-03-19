@@ -13,7 +13,7 @@ export default {
 <style scoped>
 .header {
   background-image: url("/images/header/bg.gif");
-  padding: 89.5px;
+  padding: 129px 119px;
   background-size: cover;
 }
 
