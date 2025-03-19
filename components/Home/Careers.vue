@@ -117,9 +117,13 @@ export default {
   background-image: url("/images/join_us.png");
   background-size: cover;
   text-align: center;
-  height: 866px;
+  height: 841px;
   border-radius: 13.33px;
   position: relative;
+}
+
+.department {
+  margin-bottom: 205px;
 }
 
 .get-started-button {
