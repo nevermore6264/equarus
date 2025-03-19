@@ -99,6 +99,7 @@ export default {
 .underline-container {
   display: flex;
   align-items: center;
+  margin-top: 13px;
 }
 
 .underline {
