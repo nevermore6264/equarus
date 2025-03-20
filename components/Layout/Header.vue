@@ -55,7 +55,7 @@ export default {
 <style scoped>
 .header {
   background-image: url("/images/header/bg.gif");
-  padding: 129px 119px;
+  padding: 90px 119px 124px 119px;
   background-size: cover;
   width: 100%;
   position: relative; /* Để menu dropdown có thể định vị tương đối */
@@ -76,15 +76,16 @@ export default {
 .header-subtitle {
   font-size: 112px;
   color: #ffffff;
-  margin-top: 455px;
+  margin-top: 437px;
   font-family: "Gentium Book Basic", serif;
+  letter-spacing: -2.4px;
 }
 
 .header-owner {
   font-size: 112px;
   color: #ffffff;
-  margin-top: 20px;
   font-family: "Gentium Book Basic", serif;
+  letter-spacing: -2.4px;
 }
 
 /* Icon menu */
