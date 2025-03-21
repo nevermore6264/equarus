@@ -44,17 +44,16 @@ export default {
 .left-side {
   flex: 4;
   text-align: left;
-  padding-right: 2rem;
 }
 
 .left-side h1 {
   font-size: 45.33px;
   color: #000000;
-  line-height: 1.6;
+  line-height: 1.8;
   font-weight: 300;
   font-family: "Krona One", sans-serif;
   vertical-align: top;
-  letter-spacing: -3.8px;
+  letter-spacing: -4.8px;
 }
 
 .right-side {
@@ -63,6 +62,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 46px;
 }
 
 .text-content {
@@ -75,6 +75,7 @@ export default {
   line-height: 1.6;
   font-family: "Inter", sans-serif;
   margin: 0;
+  padding-left: 20px;
 }
 
 .join-button {
