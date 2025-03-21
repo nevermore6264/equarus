@@ -4,12 +4,15 @@
       <div class="stat">
         <h2>Brand</h2>
         <p>
-          <i class="pi pi-arrow-up" style="
+          <i
+            class="pi pi-arrow-up"
+            style="
               color: #00dbf4;
               font-size: 46px;
               vertical-align: super;
               margin-right: 10px;
-            "></i>
+            "
+          ></i>
           <span>4+</span>
           <span class="note">Brands</span>
         </p>
@@ -17,12 +20,15 @@
       <div class="stat">
         <h2>Products</h2>
         <p>
-          <i class="pi pi-arrow-up" style="
+          <i
+            class="pi pi-arrow-up"
+            style="
               color: #00dbf4;
               font-size: 46px;
               vertical-align: super;
               margin-right: 10px;
-            "></i>
+            "
+          ></i>
           <span>1000+</span>
           <span class="note">Products</span>
         </p>
@@ -30,12 +36,15 @@
       <div class="stat">
         <h2>Channel</h2>
         <p>
-          <i class="pi pi-arrow-up" style="
+          <i
+            class="pi pi-arrow-up"
+            style="
               color: #00dbf4;
               font-size: 46px;
               vertical-align: super;
               margin-right: 10px;
-            "></i>
+            "
+          ></i>
           <span>3+</span>
           <span class="note">Channel</span>
         </p>
@@ -43,12 +52,15 @@
       <div class="stat">
         <h2>Order</h2>
         <p>
-          <i class="pi pi-arrow-up" style="
+          <i
+            class="pi pi-arrow-up"
+            style="
               color: #00dbf4;
               font-size: 46px;
               vertical-align: super;
               margin-right: 10px;
-            "></i>
+            "
+          ></i>
           <span>2M+</span>
           <span class="note">Orders</span>
         </p>
@@ -61,8 +73,10 @@
       </p>
       <p class="brand">
         Mỗi thương hiệu được định hướng phục vụ các danh mục sản phẩm đa dạng -
-        <em>đáp ứng nhu cầu của nhiều phân khúc khách hàng và thị trường khác
-          nhau.</em>
+        <em
+          >đáp ứng nhu cầu của nhiều phân khúc khách hàng và thị trường khác
+          nhau.</em
+        >
       </p>
     </div>
     <img src="~/public/images/map.png" alt="Join Us" class="map" />
