@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .mission {
-  padding: 0 119px 129px 119px;
+  padding: 0 123.25px 129px 123.25px;
   text-align: center;
 }
 
@@ -53,7 +53,7 @@ export default {
   font-weight: 300;
   font-family: "Krona One", sans-serif;
   vertical-align: top;
-  letter-spacing: -4.8px;
+  letter-spacing: -4.9px;
 }
 
 .right-side {
@@ -75,17 +75,19 @@ export default {
   line-height: 1.6;
   font-family: "Inter", sans-serif;
   margin: 0;
+  letter-spacing: -1.2px;
   padding-left: 20px;
 }
 
 .join-button {
-  margin-top: 50px;
-  padding: 27.5px 100px;
-  font-size: 15px;
+  margin-top: 64px;
+  margin-left: 23px;
+  border: 1px solid #000000;
+  padding: 24.5px 70px;
+  font-size: 20px;
   font-family: "Lexend Zetta", sans-serif;
   color: #000000;
   background-color: #d9d9d9;
-  border: none;
   border-radius: 40px;
   cursor: pointer;
   text-transform: uppercase;
