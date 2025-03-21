@@ -6,7 +6,6 @@
       :numVisible="1"
       :showThumbnails="false"
       :showIndicators="false"
-      containerStyle="max-width: 1260px; margin: 100px auto auto auto;"
     >
       <template #item="slotProps">
         <img
@@ -16,6 +15,8 @@
         />
       </template>
     </Galleria>
+
+    <div class="divider"></div>
 
     <div class="thumbnail-container">
       <div
@@ -32,7 +33,7 @@
       </div>
     </div>
 
-    <div class="divider"></div>
+    <div class="divider end"></div>
   </div>
 </template>
 
@@ -88,7 +89,7 @@ export default {
 <style scoped>
 .gallery {
   text-align: center;
-  padding: 129px 119px;
+  padding: 0 119px 283px 119px;
 }
 
 .thumbnail-container {
@@ -120,7 +121,9 @@ export default {
 .main-image {
   border-radius: 13.33px;
   width: 100%;
-  height: auto;
+  max-width: 1253.44px;
+  height: 787.5px;
+  margin: 0 auto;
 }
 
 .divider {
@@ -128,7 +131,11 @@ export default {
   max-width: 1260px;
   height: 1.33px;
   background-color: #000000;
-  margin: 30px auto;
+  margin: 44px auto;
+}
+
+.end {
+  margin-bottom: 0;
 }
 
 /* Responsive styles */
