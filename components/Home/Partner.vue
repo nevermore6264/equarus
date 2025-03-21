@@ -49,7 +49,7 @@ const images = [
 .underline-container {
   display: flex;
   align-items: center;
-  margin-top: 13px;
+  margin-top: 7px;
 }
 
 .underline {

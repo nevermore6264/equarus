@@ -1,6 +1,6 @@
 <template>
   <div class="culture">
-    <p class="title">Văn hoá</p>
+    <p class="title">Văn hóa</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
       <i class="pi pi-arrow-down-left" style="color: #ffffff"></i>
@@ -47,7 +47,7 @@ export default {
 
 <style scoped>
 .culture {
-  padding: 129px 119px;
+  padding: 93px 124.5px 129px 124.5px;
   background-color: #0d0d0d;
   color: #ffffff;
 }
@@ -56,6 +56,7 @@ export default {
   font-size: 53.91px;
   font-family: "Inter", sans-serif;
   color: #ffffff;
+  letter-spacing: -1.8px;
 }
 
 .subtitle {
@@ -68,7 +69,7 @@ export default {
 .underline-container {
   display: flex;
   align-items: center;
-  margin-top: 13px;
+  margin-top: 7px;
 }
 
 .underline {
@@ -86,7 +87,7 @@ export default {
 .content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 92px;
+  gap: 67.5px;
   margin: 0 auto;
 }
 
@@ -94,6 +95,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 0;
 }
 
 .col img {
