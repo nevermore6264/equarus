@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .mission {
-  padding: 129px 119px;
+  padding: 0 119px 129px 119px;
   text-align: center;
 }
 
@@ -42,7 +42,7 @@ export default {
 }
 
 .left-side {
-  flex: 1;
+  flex: 4;
   text-align: left;
   padding-right: 2rem;
 }
@@ -54,10 +54,11 @@ export default {
   font-weight: 300;
   font-family: "Krona One", sans-serif;
   vertical-align: top;
+  letter-spacing: -3.8px;
 }
 
 .right-side {
-  flex: 1;
+  flex: 6;
   text-align: left;
   display: flex;
   flex-direction: column;

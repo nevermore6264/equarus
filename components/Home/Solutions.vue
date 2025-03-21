@@ -4,15 +4,12 @@
       <div class="stat">
         <h2>Brand</h2>
         <p>
-          <i
-            class="pi pi-arrow-up"
-            style="
+          <i class="pi pi-arrow-up" style="
               color: #00dbf4;
-              font-size: 37px;
+              font-size: 46px;
               vertical-align: super;
               margin-right: 10px;
-            "
-          ></i>
+            "></i>
           <span>4+</span>
           <span class="note">Brands</span>
         </p>
@@ -20,15 +17,12 @@
       <div class="stat">
         <h2>Products</h2>
         <p>
-          <i
-            class="pi pi-arrow-up"
-            style="
+          <i class="pi pi-arrow-up" style="
               color: #00dbf4;
-              font-size: 37px;
+              font-size: 46px;
               vertical-align: super;
               margin-right: 10px;
-            "
-          ></i>
+            "></i>
           <span>1000+</span>
           <span class="note">Products</span>
         </p>
@@ -36,15 +30,12 @@
       <div class="stat">
         <h2>Channel</h2>
         <p>
-          <i
-            class="pi pi-arrow-up"
-            style="
+          <i class="pi pi-arrow-up" style="
               color: #00dbf4;
-              font-size: 37px;
+              font-size: 46px;
               vertical-align: super;
               margin-right: 10px;
-            "
-          ></i>
+            "></i>
           <span>3+</span>
           <span class="note">Channel</span>
         </p>
@@ -52,15 +43,12 @@
       <div class="stat">
         <h2>Order</h2>
         <p>
-          <i
-            class="pi pi-arrow-up"
-            style="
+          <i class="pi pi-arrow-up" style="
               color: #00dbf4;
-              font-size: 37px;
+              font-size: 46px;
               vertical-align: super;
               margin-right: 10px;
-            "
-          ></i>
+            "></i>
           <span>2M+</span>
           <span class="note">Orders</span>
         </p>
@@ -71,12 +59,10 @@
         Equarus Solutions hoạt động trong lĩnh vực thương mại điện tử quốc tế,
         sở hữu, phát triển và quản lý một hệ thống các thương hiệu độc lập.
       </p>
-      <p>
+      <p class="brand">
         Mỗi thương hiệu được định hướng phục vụ các danh mục sản phẩm đa dạng -
-        <em
-          >đáp ứng nhu cầu của nhiều phân khúc khách hàng và thị trường khác
-          nhau.</em
-        >
+        <em>đáp ứng nhu cầu của nhiều phân khúc khách hàng và thị trường khác
+          nhau.</em>
       </p>
     </div>
     <img src="~/public/images/map.png" alt="Join Us" class="map" />
@@ -91,14 +77,14 @@ export default {
 
 <style scoped>
 .solutions {
-  padding: 129px 119px;
+  padding: 91px 101.5px 0 101.5px;
   text-align: center;
 }
 
 .stats {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 150px;
+  gap: 87px;
+  margin-bottom: 222px;
 }
 
 .stat {
@@ -112,6 +98,7 @@ export default {
   color: #000000;
   font-family: "Poppins", sans-serif;
   text-align: left;
+  font-weight: 400;
 }
 
 .stat p {
@@ -121,26 +108,35 @@ export default {
 .stat span {
   font-size: 66.67px;
   color: #000000;
+  font-weight: 500;
 }
 
 .stat span.note {
   font-size: 17.33px;
   color: #000000;
+  display: inline-block;
   vertical-align: top;
+  margin-top: 18px;
+  margin-left: 11px;
 }
 
 .description {
   margin: 0 auto;
   text-align: left;
-  padding: 129px 119px;
+  padding: 0px 119px 197px 119px;
 }
 
 .description p {
   font-size: 68px;
   color: #1e1e1e;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.65;
   font-family: "Gentium Book Basic", serif;
+  letter-spacing: -2.8px;
+}
+
+.description .brand {
+  letter-spacing: -3.8px;
 }
 
 .description em {
@@ -149,10 +145,10 @@ export default {
 }
 
 .map {
-  margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 283px;
   width: 100%;
-  height: auto;
+  height: 880px;
+  max-width: 1672px;
 }
 
 /* Responsive Styles */
@@ -163,6 +159,9 @@ export default {
 
   .stats {
     margin-bottom: 100px;
+    flex-direction: column;
+    /* Xếp các stat theo chiều dọc */
+    gap: 10px;
   }
 
   .stat {
@@ -201,14 +200,17 @@ export default {
   }
 
   .stats {
-    flex-wrap: wrap; /* Cho phép các stat xuống dòng */
-    gap: 20px; /* Khoảng cách giữa các stat */
+    flex-wrap: wrap;
+    /* Cho phép các stat xuống dòng */
+    gap: 20px;
+    /* Khoảng cách giữa các stat */
     margin-bottom: 80px;
   }
 
   .stat {
     min-width: 200px;
-    flex: 1 1 45%; /* Mỗi stat chiếm 45% chiều rộng */
+    flex: 1 1 45%;
+    /* Mỗi stat chiếm 45% chiều rộng */
   }
 
   .stat h2 {
@@ -243,14 +245,16 @@ export default {
   }
 
   .stats {
-    flex-direction: column; /* Xếp các stat theo chiều dọc */
+    flex-direction: column;
+    /* Xếp các stat theo chiều dọc */
     gap: 10px;
     margin-bottom: 60px;
   }
 
   .stat {
     min-width: 100%;
-    flex: 1 1 100%; /* Mỗi stat chiếm toàn bộ chiều rộng */
+    flex: 1 1 100%;
+    /* Mỗi stat chiếm toàn bộ chiều rộng */
   }
 
   .stat h2 {
