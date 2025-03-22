@@ -62,7 +62,7 @@ export default {
 .subtitle {
   font-size: 25.78px;
   color: #00dbf4;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   font-family: "Inter", sans-serif;
 }
 
@@ -103,15 +103,20 @@ export default {
   height: 100%;
   object-fit: cover;
   border-radius: 13.33px;
+  margin-top: 108px;
 }
 
 .description,
 .principle,
 .conclusion {
   font-size: 30.47px;
-  line-height: 1.6;
   color: #d9d9d9;
   font-family: "Gentium Book Basic", serif;
+  line-height: 52px;
+}
+
+.principle {
+  letter-spacing: 1px;
 }
 
 /* Responsive styles */
