@@ -33,9 +33,11 @@
         </p>
       </div>
       <div class="col">
-        <img src="~/public/images/culture2.jpg" alt="Culture" />
+        <img class="four" src="~/public/images/culture2.jpg" alt="Culture" />
       </div>
     </div>
+
+    <img src="~/public/images/cul.png" alt="Văn hoá công ty" class="map" />
   </div>
 </template>
 
@@ -47,7 +49,7 @@ export default {
 
 <style scoped>
 .culture {
-  padding: 93px 124.5px 129px 124.5px;
+  padding: 93px 124.5px 181px 124.5px;
   background-color: #0d0d0d;
   color: #ffffff;
 }
@@ -96,6 +98,19 @@ export default {
   flex-direction: column;
   gap: 20px;
   padding: 0;
+}
+
+.col .four {
+  padding: 10px;
+  margin-top: 0px;
+  padding: 6px 10px;
+}
+
+.map {
+  margin-top: 161px;
+  width: 100%;
+  height: 1044;
+  max-width: 1661.33px;
 }
 
 .col img {

@@ -50,7 +50,7 @@ export default {
 
 <style scoped>
 .history {
-  padding: 129px 119px;
+  padding: 0px 119px 129px 119px;
   background-color: #0d0d0d;
   color: #ffffff;
 }
