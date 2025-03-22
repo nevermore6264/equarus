@@ -3,7 +3,15 @@
     <p class="title">Văn hóa</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
-      <i class="pi pi-arrow-down-left" style="color: #ffffff"></i>
+      <i
+        class="pi pi-arrow-down-left"
+        style="
+          color: #ffffff;
+          font-size: 40px;
+          margin-left: 57px;
+          margin-right: 17px;
+        "
+      ></i>
     </div>
     <p class="subtitle">Tổ Chức Hiệu Suất Cao</p>
 
@@ -70,8 +78,7 @@ export default {
 
 .underline-container {
   display: flex;
-  align-items: center;
-  margin-top: 7px;
+  align-items: end;
 }
 
 .underline {

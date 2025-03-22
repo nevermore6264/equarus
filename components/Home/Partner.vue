@@ -3,7 +3,15 @@
     <p class="title">Partner</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
-      <i class="pi pi-arrow-down-left" style="color: black"></i>
+      <i
+        class="pi pi-arrow-down-left"
+        style="
+          color: black;
+          font-size: 40px;
+          margin-left: 57px;
+          margin-right: 17px;
+        "
+      ></i>
     </div>
     <p class="subtitle"></p>
     <div class="partner-images">
@@ -42,14 +50,13 @@ const images = [
 .subtitle {
   font-size: 25.78px;
   color: #343434;
-  margin-bottom: 100px;
+  margin-bottom: 181px;
   font-family: "Inter", sans-serif;
 }
 
 .underline-container {
   display: flex;
-  align-items: center;
-  margin-top: 7px;
+  align-items: end;
 }
 
 .underline {

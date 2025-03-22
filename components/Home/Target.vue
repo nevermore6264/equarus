@@ -73,8 +73,7 @@ export default {
 
 .underline-container {
   display: flex;
-  align-items: center;
-  margin-top: 7px;
+  align-items: end;
 }
 
 .underline {
