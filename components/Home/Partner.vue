@@ -31,7 +31,7 @@ const images = [
 
 <style scoped>
 .partner {
-  padding: 129px 119px;
+  padding: 117px 119px 129px 119px;
 }
 
 .title {

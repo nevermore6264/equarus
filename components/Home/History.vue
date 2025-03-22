@@ -3,7 +3,15 @@
     <p class="title">Lịch sử phát triển</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
-      <i class="pi pi-arrow-down-left" style="color: #ffffff"></i>
+      <i
+        class="pi pi-arrow-down-left"
+        style="
+          color: #1e1e1e;
+          font-size: 40px;
+          margin-left: 57px;
+          margin-right: 17px;
+        "
+      ></i>
     </div>
     <p class="subtitle"></p>
 
@@ -64,14 +72,13 @@ export default {
 .subtitle {
   font-size: 25.78px;
   color: #343434;
-  margin-bottom: 100px;
+  margin-bottom: 92px;
   font-family: "Inter", sans-serif;
 }
 
 .underline-container {
   display: flex;
-  align-items: center;
-  margin-top: 7px;
+  align-items: end;
 }
 
 .underline {
