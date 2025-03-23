@@ -3,15 +3,7 @@
     <p class="title">Mục tiêu</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
-      <i
-        class="pi pi-arrow-down-left"
-        style="
-          color: #1e1e1e;
-          font-size: 40px;
-          margin-left: 57px;
-          margin-right: 17px;
-        "
-      ></i>
+      <i class="pi pi-arrow-down-left arrow-icon" style="color: #1e1e1e"></i>
     </div>
     <p class="subtitle"></p>
     <table class="target-table">
@@ -82,9 +74,10 @@ export default {
   background-color: #00dbf4;
 }
 
-.pi-arrow-down-left {
-  margin-left: 0.5rem;
-  font-size: 1.5rem;
+.arrow-icon {
+  font-size: 40px; /* Kích thước mặc định */
+  margin-left: 57px; /* Khoảng cách mặc định */
+  margin-right: 17px; /* Khoảng cách mặc định */
 }
 
 .target-table {
@@ -143,6 +136,16 @@ export default {
     font-size: 40px;
   }
 
+  .underline-container {
+    align-items: center;
+  }
+
+  .arrow-icon {
+    font-size: 32px; /* Giảm kích thước icon */
+    margin-left: 40px; /* Giảm khoảng cách */
+    margin-right: 10px; /* Giảm khoảng cách */
+  }
+
   .target-table .content {
     font-size: 40px;
     padding-left: 80px;
@@ -165,6 +168,12 @@ export default {
 
   .title {
     font-size: 30px;
+  }
+
+  .arrow-icon {
+    font-size: 24px; /* Giảm kích thước icon */
+    margin-left: 20px; /* Giảm khoảng cách */
+    margin-right: 5px; /* Giảm khoảng cách */
   }
 
   .target-table .content {
@@ -191,6 +200,12 @@ export default {
     font-size: 24px;
   }
 
+  .arrow-icon {
+    font-size: 20px; /* Giảm kích thước icon */
+    margin-left: 10px; /* Giảm khoảng cách */
+    margin-right: 5px; /* Giảm khoảng cách */
+  }
+
   .target-table {
     display: block;
   }
@@ -211,7 +226,8 @@ export default {
   .target-table .year {
     font-size: 30px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   .target-table td {
@@ -220,6 +236,10 @@ export default {
 
   .target-table .icon {
     display: none; /* Ẩn icon trên màn hình nhỏ */
+  }
+
+  .subtitle {
+    margin-bottom: 0;
   }
 }
 </style>
