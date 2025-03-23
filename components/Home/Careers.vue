@@ -4,7 +4,7 @@
     <!-- Thêm thẻ div với gạch chân và icon -->
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
-      <i class="pi pi-arrow-down-left" style="color: black"></i>
+      <i class="pi pi-arrow-down-left arrow-icon" style="color: black"></i>
     </div>
     <p class="subtitle">Chức năng, nhiệm vụ phòng ban</p>
     <div class="departments">
@@ -72,9 +72,8 @@ export default {
 .subtitle {
   font-size: 25.78px;
   color: #343434;
-  margin-bottom: 100px;
-  font-family: "Inter", sans-serif;
   margin-bottom: 220px;
+  font-family: "Inter", sans-serif;
 }
 
 .departments {
@@ -110,9 +109,10 @@ export default {
   background-color: #00dbf4;
 }
 
-.pi-arrow-down-left {
-  margin-left: 0.5rem;
-  font-size: 1.5rem;
+.arrow-icon {
+  font-size: 40px; /* Kích thước mặc định */
+  margin-left: 57px; /* Khoảng cách mặc định */
+  margin-right: 17px; /* Khoảng cách mặc định */
 }
 
 .join-us {
@@ -155,6 +155,13 @@ export default {
 
   .subtitle {
     font-size: 20px;
+    margin-bottom: 80px;
+  }
+
+  .arrow-icon {
+    font-size: 32px; /* Giảm kích thước icon */
+    margin-left: 40px; /* Giảm khoảng cách */
+    margin-right: 10px; /* Giảm khoảng cách */
   }
 
   .departments {
@@ -169,6 +176,7 @@ export default {
 
   .department .desc {
     font-size: 20px;
+    line-height: 1.6;
   }
 
   .join-us {
@@ -189,6 +197,10 @@ export default {
     padding: 40px;
   }
 
+  .department {
+    margin-bottom: 10px;
+  }
+
   .title {
     font-size: 32px;
   }
@@ -196,6 +208,12 @@ export default {
   .subtitle {
     font-size: 18px;
     margin-bottom: 50px;
+  }
+
+  .arrow-icon {
+    font-size: 24px; /* Giảm kích thước icon */
+    margin-left: 20px; /* Giảm khoảng cách */
+    margin-right: 5px; /* Giảm khoảng cách */
   }
 
   .departments {
@@ -210,6 +228,7 @@ export default {
 
   .department .desc {
     font-size: 18px;
+    line-height: 1.5;
   }
 
   .join-us {
@@ -239,6 +258,16 @@ export default {
     margin-bottom: 30px;
   }
 
+  .arrow-icon {
+    font-size: 20px; /* Giảm kích thước icon */
+    margin-left: 10px; /* Giảm khoảng cách */
+    margin-right: 5px; /* Giảm khoảng cách */
+  }
+
+  .department {
+    margin-bottom: 0px;
+  }
+
   .departments {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -251,6 +280,7 @@ export default {
 
   .department .desc {
     font-size: 16px;
+    line-height: 1.4;
   }
 
   .join-us {
