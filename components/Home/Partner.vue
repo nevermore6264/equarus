@@ -39,7 +39,7 @@ const images = [
 
 <style scoped>
 .partner {
-  padding: 117px 119px 129px 119px;
+  padding: 117px 108px 202px 108px;
 }
 
 .title {
@@ -73,12 +73,12 @@ const images = [
 .partner-images {
   display: flex;
   flex-wrap: wrap; /* Cho phép các ảnh xuống dòng */
-  justify-content: center; /* Căn giữa các ảnh */
+  justify-content: space-between; /* Căn giữa các ảnh */
   gap: 20px; /* Khoảng cách giữa các ảnh */
   margin: 0 auto;
   background-color: #000000;
   border-radius: 10px;
-  padding: 20px; /* Thêm padding để tránh bị sát viền */
+  padding: 56px;
   box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng */
 }
 

@@ -86,13 +86,12 @@ export default {
 
 <style scoped>
 .contact {
-  padding: 129px 119px;
+  padding: 0 119px 129px 119px;
 }
 
 .title {
   font-size: 53.91px;
   font-family: "Inter", sans-serif;
-  margin-bottom: 220px;
 }
 
 .subtitle {
