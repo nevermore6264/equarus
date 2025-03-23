@@ -102,10 +102,12 @@ export default {
 
   .left-side h1 {
     font-size: 35px;
+    letter-spacing: -3px; /* Điều chỉnh letter-spacing */
   }
 
   .right-side p {
     font-size: 24px;
+    letter-spacing: -1px; /* Điều chỉnh letter-spacing */
   }
 
   .join-button {
@@ -132,14 +134,18 @@ export default {
 
   .left-side h1 {
     font-size: 30px;
+    letter-spacing: -2px; /* Điều chỉnh letter-spacing */
   }
 
   .right-side {
     text-align: center; /* Căn giữa nội dung */
+    margin-left: 0; /* Xóa margin-left */
   }
 
   .right-side p {
     font-size: 20px;
+    letter-spacing: -0.8px; /* Điều chỉnh letter-spacing */
+    padding-left: 0; /* Xóa padding-left */
   }
 
   .join-button {
@@ -147,6 +153,7 @@ export default {
     padding: 15px 60px;
     font-size: 12px;
     align-self: center; /* Căn giữa nút */
+    margin-left: 0; /* Xóa margin-left */
   }
 }
 
@@ -157,10 +164,12 @@ export default {
 
   .left-side h1 {
     font-size: 24px;
+    letter-spacing: -1.5px; /* Điều chỉnh letter-spacing */
   }
 
   .right-side p {
     font-size: 16px;
+    letter-spacing: -0.5px; /* Điều chỉnh letter-spacing */
   }
 
   .join-button {

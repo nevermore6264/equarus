@@ -122,8 +122,9 @@ export default {
   border-radius: 13.33px;
   width: 100%;
   max-width: 1253.44px;
-  height: 787.5px;
+  height: 787.5px; /* Chiều cao cố định */
   margin: 0 auto;
+  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
 }
 
 .divider {
@@ -149,6 +150,10 @@ export default {
     height: 180px;
   }
 
+  .main-image {
+    height: 600px; /* Giảm chiều cao */
+  }
+
   .divider {
     max-width: 1000px;
   }
@@ -165,6 +170,10 @@ export default {
     margin: 5px;
   }
 
+  .main-image {
+    height: 400px; /* Giảm chiều cao */
+  }
+
   .divider {
     max-width: 800px;
   }
@@ -179,6 +188,10 @@ export default {
     width: 150px;
     height: 90px;
     margin: 5px;
+  }
+
+  .main-image {
+    height: 300px; /* Giảm chiều cao */
   }
 
   .divider {
