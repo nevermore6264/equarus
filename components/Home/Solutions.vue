@@ -161,7 +161,8 @@ export default {
 .map {
   margin-bottom: 283px;
   width: 100%;
-  height: 880px;
+  height: auto; /* Thay đổi height thành auto */
+  max-height: 880px; /* Giới hạn chiều cao tối đa */
   max-width: 1672px;
 }
 
@@ -174,7 +175,6 @@ export default {
   .stats {
     margin-bottom: 100px;
     flex-direction: column;
-    /* Xếp các stat theo chiều dọc */
     gap: 10px;
   }
 
@@ -200,11 +200,17 @@ export default {
 
   .description p {
     font-size: 50px;
+    letter-spacing: -2px; /* Điều chỉnh letter-spacing */
+  }
+
+  .description .brand {
+    letter-spacing: -2.5px; /* Điều chỉnh letter-spacing */
   }
 
   .map {
     margin-top: 80px;
     margin-bottom: 100px;
+    max-height: 600px; /* Giảm chiều cao tối đa */
   }
 }
 
@@ -215,16 +221,13 @@ export default {
 
   .stats {
     flex-wrap: wrap;
-    /* Cho phép các stat xuống dòng */
     gap: 20px;
-    /* Khoảng cách giữa các stat */
     margin-bottom: 80px;
   }
 
   .stat {
     min-width: 200px;
     flex: 1 1 45%;
-    /* Mỗi stat chiếm 45% chiều rộng */
   }
 
   .stat h2 {
@@ -245,11 +248,17 @@ export default {
 
   .description p {
     font-size: 36px;
+    letter-spacing: -1.5px; /* Điều chỉnh letter-spacing */
+  }
+
+  .description .brand {
+    letter-spacing: -2px; /* Điều chỉnh letter-spacing */
   }
 
   .map {
     margin-top: 60px;
     margin-bottom: 80px;
+    max-height: 400px; /* Giảm chiều cao tối đa */
   }
 }
 
@@ -260,7 +269,6 @@ export default {
 
   .stats {
     flex-direction: column;
-    /* Xếp các stat theo chiều dọc */
     gap: 10px;
     margin-bottom: 60px;
   }
@@ -268,7 +276,6 @@ export default {
   .stat {
     min-width: 100%;
     flex: 1 1 100%;
-    /* Mỗi stat chiếm toàn bộ chiều rộng */
   }
 
   .stat h2 {
@@ -289,11 +296,17 @@ export default {
 
   .description p {
     font-size: 24px;
+    letter-spacing: -1px; /* Điều chỉnh letter-spacing */
+  }
+
+  .description .brand {
+    letter-spacing: -1.5px; /* Điều chỉnh letter-spacing */
   }
 
   .map {
     margin-top: 40px;
     margin-bottom: 60px;
+    max-height: 300px; /* Giảm chiều cao tối đa */
   }
 }
 </style>
