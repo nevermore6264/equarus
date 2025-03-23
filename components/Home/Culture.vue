@@ -3,15 +3,7 @@
     <p class="title">Văn hóa</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
-      <i
-        class="pi pi-arrow-down-left"
-        style="
-          color: #ffffff;
-          font-size: 40px;
-          margin-left: 57px;
-          margin-right: 17px;
-        "
-      ></i>
+      <i class="pi pi-arrow-down-left arrow-icon" style="color: #ffffff"></i>
     </div>
     <p class="subtitle">Tổ Chức Hiệu Suất Cao</p>
 
@@ -87,9 +79,10 @@ export default {
   background-color: #00dbf4;
 }
 
-.pi-arrow-down-left {
-  margin-left: 0.5rem;
-  font-size: 1.5rem;
+.arrow-icon {
+  font-size: 40px; /* Kích thước mặc định */
+  margin-left: 57px; /* Khoảng cách mặc định */
+  margin-right: 17px; /* Khoảng cách mặc định */
 }
 
 /* Phần nội dung chia thành 4 cột */
@@ -157,6 +150,17 @@ export default {
     margin-bottom: 80px;
   }
 
+  .arrow-icon {
+    align-items: center;
+    font-size: 32px; /* Giảm kích thước icon */
+    margin-left: 40px; /* Giảm khoảng cách */
+    margin-right: 10px; /* Giảm khoảng cách */
+  }
+
+  .underline-container {
+    align-items: center;
+  }
+
   .content {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
@@ -194,6 +198,12 @@ export default {
     margin-bottom: 50px;
   }
 
+  .arrow-icon {
+    font-size: 24px; /* Giảm kích thước icon */
+    margin-left: 20px; /* Giảm khoảng cách */
+    margin-right: 5px; /* Giảm khoảng cách */
+  }
+
   .content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -229,6 +239,16 @@ export default {
   .subtitle {
     font-size: 16px;
     margin-bottom: 30px;
+  }
+
+  .arrow-icon {
+    font-size: 20px; /* Giảm kích thước icon */
+    margin-left: 10px; /* Giảm khoảng cách */
+    margin-right: 5px; /* Giảm khoảng cách */
+  }
+
+  .underline-container {
+    align-items: center;
   }
 
   .content {
