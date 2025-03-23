@@ -28,7 +28,7 @@
         </div>
         <div class="cell"></div>
       </div>
-      <div class="row">
+      <div class="row two">
         <div class="cell">
           <p class="date">13/10/2019</p>
           <p class="content">
@@ -58,7 +58,7 @@ export default {
 
 <style scoped>
 .history {
-  padding: 0px 119px 129px 119px;
+  padding: 0px 128.5px 129px 128.5px;
   background-color: #0d0d0d;
   color: #ffffff;
 }
@@ -103,6 +103,17 @@ export default {
   background-position: center;
   min-height: 500px;
   width: 100%;
+  height: 1010px;
+}
+
+.two .date {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.two .content {
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 .row {
@@ -118,14 +129,20 @@ export default {
   font-size: 26.67px;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
+  margin-top: 30px;
+  margin-left: 20px;
+  letter-spacing: 5.2px;
 }
 
 .content {
   font-size: 30.47px;
   font-family: "Gentium Book Basic", serif;
-  line-height: 1.6;
+  letter-spacing: 0.3px;
+  line-height: 53px;
   color: #ffffff;
+  margin-left: 20px;
+  letter-spacing: 0.3px;
 }
 
 /* Responsive styles */
