@@ -201,11 +201,13 @@ export default {
 
   .date {
     font-size: 18px;
+    margin-left: 0px;
   }
 
   .content {
     font-size: 20px;
     line-height: 1.5;
+    margin-left: 0px;
   }
 
   .table {
