@@ -61,7 +61,7 @@ export default {
 
 <style scoped>
 .careers {
-  padding: 129px 119px;
+  padding: 0 119px 129px 119px;
 }
 
 .title {

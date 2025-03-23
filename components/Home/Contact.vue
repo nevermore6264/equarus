@@ -3,7 +3,15 @@
     <p class="title">Contact</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
-      <i class="pi pi-arrow-down-left" style="color: black"></i>
+      <i
+        class="pi pi-arrow-down-left"
+        style="
+          color: black;
+          font-size: 40px;
+          margin-left: 57px;
+          margin-right: 17px;
+        "
+      ></i>
     </div>
     <p class="subtitle">Lets Work Together</p>
 
@@ -49,7 +57,7 @@
             id="message"
             v-model="form.message"
             :autoResize="true"
-            rows="5"
+            rows="7"
             class="form-input"
             placeholder="Enter your question or message"
           />
@@ -97,7 +105,7 @@ export default {
 .subtitle {
   font-size: 25.78px;
   color: #343434;
-  margin-bottom: 100px;
+  margin-bottom: 127px;
   font-family: "Inter", sans-serif;
 }
 
@@ -119,15 +127,15 @@ export default {
 }
 
 .contact-form {
-  max-width: 626px;
+  max-width: 834.67px;
   margin: 0 auto;
   margin-top: 100px;
 }
 
 .form-row {
   display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 42.5px;
+  margin-bottom: 40px;
 }
 
 .form-group {
@@ -137,7 +145,7 @@ export default {
 }
 
 .form-group label {
-  font-size: 16px;
+  font-size: 21.33px;
   color: #828282;
   margin-bottom: 8px;
   font-family: "Inter", sans-serif;
@@ -146,8 +154,8 @@ export default {
 
 .form-input {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
+  padding: 18px;
+  font-size: 21.33px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   font-family: "Inter", sans-serif;
@@ -155,8 +163,8 @@ export default {
 
 .submit-button {
   width: 100%;
-  padding: 25.5px 44px;
-  font-size: 15px;
+  padding: 35.5px 44px;
+  font-size: 20px;
   font-family: "Lexend Zetta", sans-serif;
   color: #000000;
   background-color: #d9d9d9;
@@ -164,7 +172,6 @@ export default {
   border-radius: 50px;
   cursor: pointer;
   text-transform: uppercase;
-  margin-top: 20px;
 }
 
 /* Responsive styles */
