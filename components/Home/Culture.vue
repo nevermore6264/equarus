@@ -116,13 +116,14 @@ export default {
 .map {
   margin-top: 161px;
   width: 100%;
-  height: 1044;
+  height: 1044px; /* Giữ nguyên chiều cao cố định */
   max-width: 1661.33px;
+  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
 }
 
 .col img {
   width: 100%;
-  height: 100%;
+  height: 500px; /* Giữ nguyên chiều cao cố định */
   object-fit: cover;
   border-radius: 13.33px;
   margin-top: 108px;
@@ -153,7 +154,7 @@ export default {
 
   .subtitle {
     font-size: 20px;
-    margin-bottom: 220px;
+    margin-bottom: 80px;
   }
 
   .content {
@@ -165,6 +166,17 @@ export default {
   .principle,
   .conclusion {
     font-size: 24px;
+    line-height: 1.6;
+  }
+
+  .col img {
+    height: 400px; /* Giảm chiều cao */
+    margin-top: 60px;
+  }
+
+  .map {
+    height: 800px; /* Giảm chiều cao */
+    margin-top: 100px;
   }
 }
 
@@ -191,6 +203,17 @@ export default {
   .principle,
   .conclusion {
     font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .col img {
+    height: 300px; /* Giảm chiều cao */
+    margin-top: 40px;
+  }
+
+  .map {
+    height: 600px; /* Giảm chiều cao */
+    margin-top: 80px;
   }
 }
 
@@ -216,6 +239,17 @@ export default {
   .principle,
   .conclusion {
     font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .col img {
+    height: 200px; /* Giảm chiều cao */
+    margin-top: 20px;
+  }
+
+  .map {
+    height: 400px; /* Giảm chiều cao */
+    margin-top: 60px;
   }
 }
 </style>
