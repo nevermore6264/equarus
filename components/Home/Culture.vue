@@ -3,7 +3,7 @@
     <p class="title">Văn hóa</p>
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
-      <i class="pi pi-arrow-down-left arrow-icon" style="color: #ffffff"></i>
+      <i class="pi pi-arrow-down-left arrow-icon" style="color: #1e1e1e"></i>
     </div>
     <p class="subtitle">Tổ Chức Hiệu Suất Cao</p>
 
