@@ -190,6 +190,11 @@ export default {
     padding: 20px 50px;
     font-size: 18px;
   }
+
+  .department {
+    margin-bottom: 10px;
+  }
+
 }
 
 @media (max-width: 768px) {

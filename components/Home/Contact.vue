@@ -198,7 +198,7 @@ export default {
 
   .form-row {
     flex-direction: column;
-    gap: 15px;
+    gap: 40px;
   }
 
   .submit-button {
