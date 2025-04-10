@@ -180,8 +180,7 @@ export default {
   }
 
   .stat {
-    min-width: 250px;
-    max-width: 300px;
+    max-width: 50%;
     flex: 1 1 45%;
   }
 
