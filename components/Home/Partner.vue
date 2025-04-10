@@ -90,6 +90,17 @@ const images = [
 }
 
 /* Responsive Styles */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .partner-images {
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .partner-image {
+    max-width: 15%;
+  }
+}
+
 @media (max-width: 1366px) {
   .partner {
     padding: 60px;
@@ -106,6 +117,11 @@ const images = [
 
   .partner-images {
     padding: 15px;
+    gap: 20px;
+  }
+
+  .partner-image {
+    max-width: 15%;
   }
 }
 
@@ -115,7 +131,7 @@ const images = [
   }
 
   .partner-image {
-    max-width: 150px; /* Giới hạn kích thước ảnh */
+    max-width: 15%;
   }
 }
 
@@ -138,7 +154,7 @@ const images = [
   }
 
   .partner-image {
-    max-width: 120px; /* Giảm kích thước ảnh */
+    max-width: 15%;
   }
 }
 
@@ -162,7 +178,7 @@ const images = [
   }
 
   .partner-image {
-    max-width: 100px; /* Giảm kích thước ảnh */
+    max-width: 10%; /* Mỗi ảnh chiếm 1 hàng */
   }
 }
 </style>
