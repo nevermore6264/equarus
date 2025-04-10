@@ -139,6 +139,31 @@ export default {
 }
 
 /* Responsive styles */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .table {
+    gap: 80px;
+    min-height: 600px;
+    height: auto;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .cell {
+    max-width: 35%;
+  }
+
+  .date {
+    font-size: 24px;
+  }
+
+  .content {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+}
+
 @media (max-width: 1366px) {
   .history {
     padding: 60px;
