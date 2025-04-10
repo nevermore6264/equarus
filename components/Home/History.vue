@@ -204,6 +204,24 @@ export default {
   }
 }
 
+@media (max-width: 1024px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .table {
+    background: unset;
+  }
+
+  .content {
+    margin-left: 0px;
+  }
+
+  .date {
+    margin-left: 0px;
+  }
+}
+
 @media (max-width: 768px) {
   .history {
     padding: 40px;
