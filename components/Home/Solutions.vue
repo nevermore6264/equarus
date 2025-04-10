@@ -167,6 +167,55 @@ export default {
 }
 
 /* Responsive Styles */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .solutions {
+    padding: 80px 120px 0 120px;
+  }
+
+  .stats {
+    gap: 80px;
+    margin-bottom: 180px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    min-width: 250px;
+    max-width: 300px;
+    flex: 1 1 45%;
+  }
+
+  .stat h2 {
+    font-size: 32px;
+  }
+
+  .stat span {
+    font-size: 58px;
+  }
+
+  .stat span.note {
+    font-size: 16px;
+  }
+
+  .description {
+    padding: 0px 100px 150px 100px;
+  }
+
+  .description p {
+    font-size: 60px;
+    letter-spacing: -2.5px;
+  }
+
+  .description .brand {
+    letter-spacing: -3.2px;
+  }
+
+  .map {
+    margin-bottom: 200px;
+    max-height: 800px;
+  }
+}
+
 @media (max-width: 1366px) {
   .solutions {
     padding: 60px;
