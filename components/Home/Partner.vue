@@ -14,7 +14,9 @@
       ></i>
     </div>
     <p class="subtitle"></p>
-    <div class="partner-images">
+
+    <!-- Desktop View (grid layout) -->
+    <div class="partner-images" v-if="!isMobile">
       <img
         v-for="(image, index) in images"
         :key="index"
@@ -23,10 +25,32 @@
         class="partner-image"
       />
     </div>
+
+    <!-- Mobile View (carousel) -->
+    <div class="carousel-container" v-else>
+      <button class="carousel-button prev" @click="prevSlide">&lt;</button>
+      <div class="carousel">
+        <div
+          class="carousel-inner"
+          :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
+        >
+          <div
+            class="carousel-item"
+            v-for="(image, index) in images"
+            :key="index"
+          >
+            <img :src="image.src" :alt="image.alt" class="partner-image" />
+          </div>
+        </div>
+      </div>
+      <button class="carousel-button next" @click="nextSlide">&gt;</button>
+    </div>
   </div>
 </template>
 
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
 // Danh sách ảnh
 const images = [
   { src: "/images/partner/amazon.png", alt: "Amazon" },
@@ -35,6 +59,47 @@ const images = [
   { src: "/images/partner/lianlianglobal.png", alt: "LianLianGlobal" },
   { src: "/images/partner/worldfirst.png", alt: "WORLDFIRST" },
 ];
+
+// Carousel logic
+const currentSlide = ref(0);
+const isMobile = ref(false);
+
+const prevSlide = () => {
+  currentSlide.value = (currentSlide.value - 1 + images.length) % images.length;
+};
+
+const nextSlide = () => {
+  currentSlide.value = (currentSlide.value + 1) % images.length;
+};
+
+// Auto-rotate carousel
+let intervalId = null;
+
+const startAutoRotate = () => {
+  intervalId = setInterval(nextSlide, 3000);
+};
+
+const stopAutoRotate = () => {
+  clearInterval(intervalId);
+};
+
+// Check screen size
+const checkScreenSize = () => {
+  isMobile.value = window.innerWidth <= 768;
+};
+
+onMounted(() => {
+  checkScreenSize();
+  window.addEventListener("resize", checkScreenSize);
+  if (isMobile.value) {
+    startAutoRotate();
+  }
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", checkScreenSize);
+  stopAutoRotate();
+});
 </script>
 
 <style scoped>
@@ -70,23 +135,74 @@ const images = [
   font-size: 1.5rem;
 }
 
+/* Desktop Styles */
 .partner-images {
   display: flex;
-  flex-wrap: wrap; /* Cho phép các ảnh xuống dòng */
-  justify-content: space-between; /* Căn giữa các ảnh */
-  gap: 20px; /* Khoảng cách giữa các ảnh */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   margin: 0 auto;
   background-color: #000000;
   border-radius: 10px;
   padding: 56px;
-  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng */
+  box-sizing: border-box;
 }
 
 .partner-image {
   height: auto;
-  max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của container */
+  max-width: 100%;
   border-radius: 8px;
-  object-fit: contain; /* Giữ tỷ lệ ảnh và không bị méo */
+  object-fit: contain;
+}
+
+/* Carousel Styles */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.carousel {
+  width: 80%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.carousel-item img {
+  max-width: 80%;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.carousel-button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* Responsive Styles */
@@ -127,7 +243,7 @@ const images = [
 
 @media (max-width: 1024px) {
   .partner-images {
-    gap: 15px; /* Giảm khoảng cách giữa các ảnh */
+    gap: 15px;
   }
 
   .partner-image {
@@ -150,11 +266,11 @@ const images = [
   }
 
   .partner-images {
-    padding: 10px;
+    display: none;
   }
 
-  .partner-image {
-    max-width: 15%;
+  .carousel-container {
+    display: flex;
   }
 }
 
@@ -172,13 +288,12 @@ const images = [
     margin-bottom: 40px;
   }
 
-  .partner-images {
-    gap: 10px; /* Giảm khoảng cách giữa các ảnh */
-    padding: 10px;
+  .carousel {
+    width: 70%;
   }
 
-  .partner-image {
-    max-width: 10%; /* Mỗi ảnh chiếm 1 hàng */
+  .carousel-item img {
+    max-height: 80px;
   }
 }
 </style>
