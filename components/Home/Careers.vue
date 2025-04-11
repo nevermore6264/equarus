@@ -4,7 +4,15 @@
     <!-- Thêm thẻ div với gạch chân và icon -->
     <div class="underline-container">
       <div class="underline" style="background-color: #00dbf4"></div>
-      <i class="pi pi-arrow-down-left arrow-icon" style="color: black"></i>
+      <i
+        class="pi pi-arrow-down-left"
+        style="
+          color: black;
+          font-size: 40px;
+          margin-left: 57px;
+          margin-right: 17px;
+        "
+      ></i>
     </div>
     <p class="subtitle">Chức năng, nhiệm vụ phòng ban</p>
     <div class="departments">
@@ -84,6 +92,7 @@ export default {
   color: #343434;
   margin-bottom: 220px;
   font-family: "Inter", sans-serif;
+  margin-top: 25px;
 }
 
 .departments {
@@ -109,20 +118,13 @@ export default {
 
 .underline-container {
   display: flex;
-  align-items: center;
-  margin-top: 7px;
+  align-items: end;
 }
 
 .underline {
   flex: 1;
   height: 2px;
   background-color: #00dbf4;
-}
-
-.arrow-icon {
-  font-size: 40px; /* Kích thước mặc định */
-  margin-left: 57px; /* Khoảng cách mặc định */
-  margin-right: 17px; /* Khoảng cách mặc định */
 }
 
 .join-us {
@@ -168,10 +170,10 @@ export default {
     margin-bottom: 80px;
   }
 
-  .arrow-icon {
-    font-size: 32px; /* Giảm kích thước icon */
-    margin-left: 40px; /* Giảm khoảng cách */
-    margin-right: 10px; /* Giảm khoảng cách */
+  .pi-arrow-down-left {
+    font-size: 32px !important;
+    margin-left: 40px !important;
+    margin-right: 10px !important;
   }
 
   .departments {
@@ -224,10 +226,10 @@ export default {
     margin-bottom: 50px;
   }
 
-  .arrow-icon {
-    font-size: 24px; /* Giảm kích thước icon */
-    margin-left: 20px; /* Giảm khoảng cách */
-    margin-right: 5px; /* Giảm khoảng cách */
+  .pi-arrow-down-left {
+    font-size: 24px !important;
+    margin-left: 20px !important;
+    margin-right: 5px !important;
   }
 
   .departments {
@@ -272,10 +274,10 @@ export default {
     margin-bottom: 30px;
   }
 
-  .arrow-icon {
-    font-size: 20px; /* Giảm kích thước icon */
-    margin-left: 10px; /* Giảm khoảng cách */
-    margin-right: 5px; /* Giảm khoảng cách */
+  .pi-arrow-down-left {
+    font-size: 20px !important;
+    margin-left: 10px !important;
+    margin-right: 5px !important;
   }
 
   .department {

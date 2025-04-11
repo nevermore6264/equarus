@@ -312,4 +312,10 @@ export default {
     padding: 5px;
   }
 }
+
+@media (min-width: 1921px) {
+  .table {
+    height: auto !important;
+  }
+}
 </style>

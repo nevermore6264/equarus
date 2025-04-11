@@ -66,6 +66,7 @@ export default {
   color: #00dbf4;
   margin-bottom: 120px;
   font-family: "Inter", sans-serif;
+  margin-top: 25px;
 }
 
 .underline-container {
