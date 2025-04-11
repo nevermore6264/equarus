@@ -16,7 +16,9 @@
             tiêu dùng lớn.
           </p>
         </div>
-        <button class="join-button">JOIN OUR TEAM</button>
+        <button class="join-button" @click="redirectToLark">
+          JOIN OUR TEAM
+        </button>
       </div>
     </div>
   </div>
@@ -25,6 +27,14 @@
 <script>
 export default {
   name: "Mission",
+  methods: {
+    redirectToLark() {
+      window.open(
+        "https://applink.larksuite.com/client/message/link/open?token=AmeOKNSIQMAfZ%2FjXAa4BACY%3D",
+        "_blank"
+      );
+    },
+  },
 };
 </script>
 

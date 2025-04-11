@@ -48,7 +48,9 @@
     </div>
 
     <div class="join-us">
-      <button class="get-started-button">JOIN OUR TEAM</button>
+      <button class="get-started-button" @click="redirectToLark">
+        JOIN OUR TEAM
+      </button>
     </div>
   </div>
 </template>
@@ -56,6 +58,14 @@
 <script>
 export default {
   name: "Careers",
+  methods: {
+    redirectToLark() {
+      window.open(
+        "https://applink.larksuite.com/client/message/link/open?token=AmeOKNSIQMAfZ%2FjXAa4BACY%3D",
+        "_blank"
+      );
+    },
+  },
 };
 </script>
 
@@ -194,7 +204,6 @@ export default {
   .department {
     margin-bottom: 10px;
   }
-
 }
 
 @media (max-width: 768px) {

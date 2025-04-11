@@ -29,7 +29,11 @@
     <!-- Dòng 3: Button và Thông tin liên hệ -->
     <div class="row contact">
       <div class="left">
-        <Button label="JOIN OUR TEAM" class="p-button-outlined btn-join-team" />
+        <Button
+          label="JOIN OUR TEAM"
+          class="p-button-outlined btn-join-team"
+          @click="redirectToLark"
+        />
       </div>
       <div class="right">
         <p class="email">info@equarus.com</p>
@@ -65,6 +69,12 @@ export default {
       if (careers) {
         careers.scrollIntoView({ behavior: "smooth" });
       }
+    },
+    redirectToLark() {
+      window.open(
+        "https://applink.larksuite.com/client/message/link/open?token=AmeOKNSIQMAfZ%2FjXAa4BACY%3D",
+        "_blank"
+      );
     },
   },
 };
