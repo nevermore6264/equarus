@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Loading />
     <CustomCursor />
     <Nuxt />
     <Header />
@@ -17,6 +18,7 @@
 </template>
 
 <script>
+import Loading from "~/components/Loading.vue";
 import CustomCursor from "~/components/CustomCursor.vue";
 import Header from "~/components/Layout/Header.vue";
 import Solutions from "~/components/Home/Solutions.vue";
@@ -32,6 +34,7 @@ import Footer from "~/components/Layout/Footer.vue";
 
 export default {
   components: {
+    Loading,
     CustomCursor,
     Header,
     Solutions,
