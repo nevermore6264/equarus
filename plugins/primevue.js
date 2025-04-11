@@ -22,6 +22,7 @@ import Carousel from "primevue/carousel";
 import InputSwitch from "primevue/inputswitch";
 import FloatLabel from "primevue/floatlabel";
 import Galleria from "primevue/galleria";
+import Textarea from "primevue/textarea";
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(PrimeVue);
@@ -48,4 +49,5 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component("InputSwitch", InputSwitch);
   nuxtApp.vueApp.component("FloatLabel", FloatLabel);
   nuxtApp.vueApp.component("Galleria", Galleria);
+  nuxtApp.vueApp.component("Textarea", Textarea);
 });

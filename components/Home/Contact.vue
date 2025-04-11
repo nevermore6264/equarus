@@ -11,46 +11,75 @@
     <div class="contact-form">
       <div class="form-row">
         <div class="form-group">
-          <label for="name">Tên</label>
+          <label for="name">Tên <span class="required">*</span></label>
           <InputText
             id="name"
             v-model="form.name"
             class="form-input"
             placeholder="Quynh Huy"
             :disabled="loading"
+            :class="{
+              'p-invalid': v$.form.name.$invalid && v$.form.name.$dirty,
+            }"
           />
+          <small
+            class="p-error"
+            v-if="v$.form.name.$invalid && v$.form.name.$dirty"
+          >
+            Tên là bắt buộc
+          </small>
         </div>
         <div class="form-group">
-          <label for="phone">Số điện thoại</label>
+          <label for="phone"
+            >Số điện thoại <span class="required">*</span></label
+          >
           <InputText
             id="phone"
             v-model="form.phone"
             class="form-input"
             placeholder="+84"
             :disabled="loading"
+            :class="{
+              'p-invalid': v$.form.phone.$invalid && v$.form.phone.$dirty,
+            }"
           />
+          <small
+            class="p-error"
+            v-if="v$.form.phone.$invalid && v$.form.phone.$dirty"
+          >
+            Số điện thoại là bắt buộc
+          </small>
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-group">
-          <label for="email">Email</label>
+          <label for="email">Email <span class="required">*</span></label>
           <InputText
             id="email"
             v-model="form.email"
             class="form-input"
             placeholder="email@gmail.com"
             :disabled="loading"
+            :class="{
+              'p-invalid': v$.form.email.$invalid && v$.form.email.$dirty,
+            }"
           />
+          <small
+            class="p-error"
+            v-if="v$.form.email.$invalid && v$.form.email.$dirty"
+          >
+            Email là bắt buộc và phải đúng định dạng
+          </small>
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-group">
-          <label for="message">Lời nhắn</label>
+          <label for="content">Lời nhắn</label>
           <Textarea
-            id="message"
-            v-model="form.message"
+            id="content"
+            v-model="form.content"
             :autoResize="true"
             rows="7"
             class="form-input"
@@ -65,7 +94,7 @@
         class="submit-button"
         @click="handleSubmit"
         :loading="loading"
-        :disabled="loading"
+        :disabled="loading || v$.form.$invalid"
       />
     </div>
   </div>
@@ -73,35 +102,54 @@
 
 <script>
 import emailjs from "@emailjs/browser";
+import { useVuelidate } from "@vuelidate/core";
+import { required, email } from "@vuelidate/validators";
 
 export default {
   name: "Contact",
+  setup() {
+    return { v$: useVuelidate() };
+  },
   data() {
     return {
       form: {
         name: "",
         phone: "",
         email: "",
-        message: "",
+        content: "",
       },
       loading: false,
     };
   },
+  validations() {
+    return {
+      form: {
+        name: { required },
+        phone: { required },
+        email: { required, email },
+        content: {},
+      },
+    };
+  },
   methods: {
     async handleSubmit() {
+      const isFormCorrect = await this.v$.$validate();
+      if (!isFormCorrect) return;
+
       try {
         this.loading = true;
 
         // Gửi email sử dụng EmailJS
         const response = await emailjs.send(
-          "service_yqaxztl", // Thay thế bằng Service ID của bạn
-          "template_rx0k4oq", // Thay thế bằng Template ID của bạn
+          "service_yqaxztl",
+          "template_rx0k4oq",
           {
             from_name: this.form.name,
             from_email: this.form.email,
             phone: this.form.phone,
-            message: this.form.message,
+            content: this.form.content || "Không có nội dung",
             to_email: "info@equarus.com",
+            title: `🛎️ New Support Request from ${this.form.name}`,
             time: new Date().toLocaleString("vi-VN", {
               year: "numeric",
               month: "2-digit",
@@ -112,7 +160,7 @@ export default {
               hour12: false,
             }),
           },
-          "xB2z-u2__AP3SA4QW" // Thay thế bằng Public Key của bạn
+          "xB2z-u2__AP3SA4QW"
         );
 
         if (response.status === 200) {
@@ -122,8 +170,9 @@ export default {
             name: "",
             phone: "",
             email: "",
-            message: "",
+            content: "",
           };
+          this.v$.$reset();
         }
       } catch (error) {
         console.error("Error sending email:", error);
@@ -335,5 +384,20 @@ export default {
     padding: 10px 20px;
     font-size: 12px;
   }
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
+}
+
+.p-error {
+  color: #f44336;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.p-invalid {
+  border-color: #f44336 !important;
 }
 </style>
