@@ -1,5 +1,6 @@
 <template>
   <div>
+    <CustomCursor />
     <Nuxt />
     <HeaderWork />
     <Title />
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+import CustomCursor from "~/components/CustomCursor.vue";
 import HeaderWork from "~/components/Layout/HeaderWork.vue";
 import Galleria from "~/components/Home/Galleria.vue";
 import Title from "~/components/Home/Title.vue";
@@ -37,6 +39,7 @@ export default {
     };
   },
   components: {
+    CustomCursor,
     HeaderWork,
     Galleria,
     Title,

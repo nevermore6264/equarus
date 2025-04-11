@@ -1,5 +1,6 @@
 <template>
   <div>
+    <CustomCursor />
     <Nuxt />
     <Header />
     <Solutions />
@@ -16,6 +17,7 @@
 </template>
 
 <script>
+import CustomCursor from "~/components/CustomCursor.vue";
 import Header from "~/components/Layout/Header.vue";
 import Solutions from "~/components/Home/Solutions.vue";
 import Mission from "~/components/Home/Mission.vue";
@@ -30,6 +32,7 @@ import Footer from "~/components/Layout/Footer.vue";
 
 export default {
   components: {
+    CustomCursor,
     Header,
     Solutions,
     Mission,
