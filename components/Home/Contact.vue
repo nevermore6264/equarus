@@ -17,6 +17,7 @@
             v-model="form.name"
             class="form-input"
             placeholder="Quynh Huy"
+            :disabled="loading"
           />
         </div>
         <div class="form-group">
@@ -26,6 +27,7 @@
             v-model="form.phone"
             class="form-input"
             placeholder="+84"
+            :disabled="loading"
           />
         </div>
       </div>
@@ -38,6 +40,7 @@
             v-model="form.email"
             class="form-input"
             placeholder="email@gmail.com"
+            :disabled="loading"
           />
         </div>
       </div>
@@ -52,16 +55,25 @@
             rows="7"
             class="form-input"
             placeholder="Enter your question or message"
+            :disabled="loading"
           />
         </div>
       </div>
 
-      <Button label="Submit" class="submit-button" @click="handleSubmit" />
+      <Button
+        label="Submit"
+        class="submit-button"
+        @click="handleSubmit"
+        :loading="loading"
+        :disabled="loading"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import emailjs from "@emailjs/browser";
+
 export default {
   name: "Contact",
   data() {
@@ -72,13 +84,53 @@ export default {
         email: "",
         message: "",
       },
+      loading: false,
     };
   },
   methods: {
-    handleSubmit() {
-      // Xử lý khi người dùng nhấn Submit
-      console.log("Form submitted:", this.form);
-      alert("Form submitted successfully!");
+    async handleSubmit() {
+      try {
+        this.loading = true;
+
+        // Gửi email sử dụng EmailJS
+        const response = await emailjs.send(
+          "service_yqaxztl", // Thay thế bằng Service ID của bạn
+          "template_rx0k4oq", // Thay thế bằng Template ID của bạn
+          {
+            from_name: this.form.name,
+            from_email: this.form.email,
+            phone: this.form.phone,
+            message: this.form.message,
+            to_email: "info@equarus.com",
+            time: new Date().toLocaleString("vi-VN", {
+              year: "numeric",
+              month: "2-digit",
+              day: "2-digit",
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit",
+              hour12: false,
+            }),
+          },
+          "xB2z-u2__AP3SA4QW" // Thay thế bằng Public Key của bạn
+        );
+
+        if (response.status === 200) {
+          alert("Email sent successfully!");
+          // Reset form
+          this.form = {
+            name: "",
+            phone: "",
+            email: "",
+            message: "",
+          };
+        }
+      } catch (error) {
+        console.error("Error sending email:", error);
+        alert("Failed to send email. Please try again later.");
+      } finally {
+        this.loading = false;
+      }
     },
   },
 };
