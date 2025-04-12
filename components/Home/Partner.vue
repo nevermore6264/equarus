@@ -1,7 +1,7 @@
 <template>
   <div class="partner">
-    <p class="title">Partner</p>
-    <div class="underline-container">
+    <p class="title fade-in-up">Partner</p>
+    <div class="underline-container fade-in-left">
       <div class="underline" style="background-color: #00dbf4"></div>
       <i
         class="pi pi-arrow-down-left"
@@ -13,29 +13,31 @@
         "
       ></i>
     </div>
-    <p class="subtitle"></p>
+    <p class="subtitle fade-in-up"></p>
 
     <!-- Desktop View (grid layout) -->
-    <div class="partner-images" v-if="!isMobile">
+    <div class="partner-images fade-in-up" v-if="!isMobile">
       <img
         v-for="(image, index) in images"
         :key="index"
         :src="image.src"
         :alt="image.alt"
-        class="partner-image"
+        class="partner-image fade-in-up"
       />
     </div>
 
     <!-- Mobile View (carousel) -->
-    <div class="carousel-container" v-else>
-      <button class="carousel-button prev" @click="prevSlide">&lt;</button>
+    <div class="carousel-container fade-in-up" v-else>
+      <button class="carousel-button prev fade-in-left" @click="prevSlide">
+        &lt;
+      </button>
       <div class="carousel">
         <div
           class="carousel-inner"
           :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
         >
           <div
-            class="carousel-item"
+            class="carousel-item fade-in-up"
             v-for="(image, index) in images"
             :key="index"
           >
@@ -43,7 +45,9 @@
           </div>
         </div>
       </div>
-      <button class="carousel-button next" @click="nextSlide">&gt;</button>
+      <button class="carousel-button next fade-in-right" @click="nextSlide">
+        &gt;
+      </button>
     </div>
   </div>
 </template>

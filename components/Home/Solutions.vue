@@ -1,7 +1,7 @@
 <template>
   <div class="solutions">
     <div class="stats">
-      <div class="stat">
+      <div class="stat fade-in-up">
         <h2>Brand</h2>
         <p>
           <i
@@ -17,7 +17,7 @@
           <span class="note">Brands</span>
         </p>
       </div>
-      <div class="stat">
+      <div class="stat fade-in-up">
         <h2>Products</h2>
         <p>
           <i
@@ -33,7 +33,7 @@
           <span class="note">Products</span>
         </p>
       </div>
-      <div class="stat">
+      <div class="stat fade-in-up">
         <h2>Channel</h2>
         <p>
           <i
@@ -49,7 +49,7 @@
           <span class="note">Channel</span>
         </p>
       </div>
-      <div class="stat">
+      <div class="stat fade-in-up">
         <h2>Order</h2>
         <p>
           <i
@@ -67,11 +67,11 @@
       </div>
     </div>
     <div class="description">
-      <p>
+      <p class="fade-in-left">
         Equarus Solutions hoạt động trong lĩnh vực thương mại điện tử quốc tế,
         sở hữu, phát triển và quản lý một hệ thống các thương hiệu độc lập.
       </p>
-      <p class="brand">
+      <p class="brand fade-in-right">
         Mỗi thương hiệu được định hướng phục vụ các danh mục sản phẩm đa dạng -
         <em
           >đáp ứng nhu cầu của nhiều phân khúc khách hàng và thị trường khác
@@ -79,7 +79,7 @@
         >
       </p>
     </div>
-    <img src="~/public/images/map.png" alt="Join Us" class="map" />
+    <img src="~/public/images/map.png" alt="Join Us" class="map fade-in-up" />
   </div>
 </template>
 

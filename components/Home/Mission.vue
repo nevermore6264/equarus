@@ -1,22 +1,22 @@
 <template>
   <div class="mission">
     <div class="mission-content">
-      <div class="left-side">
+      <div class="left-side fade-in-left">
         <h1>WHEREVER VIETNAMESE GOODS GO, THE BORDER OF VIETNAM FOLLOWS</h1>
       </div>
-      <div class="right-side">
+      <div class="right-side fade-in-right">
         <div class="text-content">
-          <p>
+          <p class="fade-in-up">
             Equarus Solutions tập trung vào các thị trường thương mại điện tử
             quốc tế lớn, bao gồm Hoa Kỳ (US), Vương quốc Anh (UK), Liên minh
             châu Âu (EU), Úc (AU) và Canada.
           </p>
-          <p>
+          <p class="fade-in-up">
             Trong đó Hoa Kỳ (US) chiếm từ trọng chính nhờ quy mô và tiềm năng
             tiêu dùng lớn.
           </p>
         </div>
-        <button class="join-button" @click="redirectToLark">
+        <button class="join-button fade-in-up" @click="redirectToLark">
           JOIN OUR TEAM
         </button>
       </div>

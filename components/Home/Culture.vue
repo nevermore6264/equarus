@@ -1,22 +1,26 @@
 <template>
   <div class="culture">
-    <p class="title">Văn hóa</p>
-    <div class="underline-container">
+    <p class="title fade-in-up">Văn hóa</p>
+    <div class="underline-container fade-in-left">
       <div class="underline" style="background-color: #00dbf4"></div>
       <i class="pi pi-arrow-down-left arrow-icon" style="color: #1e1e1e"></i>
     </div>
-    <p class="subtitle">Tổ Chức Hiệu Suất Cao</p>
+    <p class="subtitle fade-in-up">Tổ Chức Hiệu Suất Cao</p>
 
     <!-- Phần nội dung chia thành 4 cột -->
     <div class="content">
-      <div class="col">
+      <div class="col fade-in-left">
         <p class="description">
           Equarus định hình là tổ chức hiệu suất cao, nơi mỗi cá nhân cùng hướng
           đến mục tiêu chung, chia sẻ giá trị và không ngừng phát triển.
         </p>
-        <img src="~/public/images/culture1.jpg" alt="Culture" />
+        <img
+          src="~/public/images/culture1.jpg"
+          alt="Culture"
+          class="fade-in-up"
+        />
       </div>
-      <div class="col">
+      <div class="col fade-in-up">
         <p class="principle">
           Với hai giá trị cốt lõi: Trọn vẹn & Hoàn tất – Cam kết theo đuổi mục
           tiêu đến cùng, đảm bảo chất lượng và hiệu quả tối ưu trong mọi công
@@ -24,7 +28,7 @@
           và nâng cao năng lực mỗi ngày.
         </p>
       </div>
-      <div class="col">
+      <div class="col fade-in-up">
         <p class="conclusion">
           Chúng tôi tin rằng thành công của tập thể đến từ việc đặt đúng người
           vào đúng vị trí, nhờ đó mỗi cá nhân phát huy tối đa khả năng và thế
@@ -32,12 +36,20 @@
           định hướng để cùng nhau góp phần đưa hàng Việt vươn xa toàn cầu.
         </p>
       </div>
-      <div class="col">
-        <img class="four" src="~/public/images/culture2.jpg" alt="Culture" />
+      <div class="col fade-in-right">
+        <img
+          class="four fade-in-up"
+          src="~/public/images/culture2.jpg"
+          alt="Culture"
+        />
       </div>
     </div>
 
-    <img src="~/public/images/cul.png" alt="Văn hoá công ty" class="map" />
+    <img
+      src="~/public/images/cul.png"
+      alt="Văn hoá công ty"
+      class="map fade-in-up"
+    />
   </div>
 </template>
 
@@ -271,6 +283,14 @@ export default {
   .map {
     height: 400px; /* Giảm chiều cao */
     margin-top: 60px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .map {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>

@@ -1,14 +1,14 @@
 <template>
   <div class="target">
-    <p class="title">Mục tiêu</p>
-    <div class="underline-container">
+    <p class="title fade-in-up">Mục tiêu</p>
+    <div class="underline-container fade-in-left">
       <div class="underline" style="background-color: #00dbf4"></div>
       <i class="pi pi-arrow-down-left arrow-icon" style="color: #1e1e1e"></i>
     </div>
-    <p class="subtitle"></p>
+    <p class="subtitle fade-in-up"></p>
     <table class="target-table">
       <tbody>
-        <tr>
+        <tr class="fade-in-up">
           <td class="year">2025 - 2026</td>
           <td class="icon">
             <i
@@ -21,7 +21,7 @@
             diện
           </td>
         </tr>
-        <tr class="two">
+        <tr class="two fade-in-up">
           <td class="year">2027 - 2034</td>
           <td class="icon">
             <i

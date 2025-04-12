@@ -11,18 +11,18 @@
         <img
           :src="slotProps.item.itemImageSrc"
           :alt="slotProps.item.alt"
-          class="main-image"
+          class="main-image fade-in-up"
         />
       </template>
     </Galleria>
 
-    <div class="divider"></div>
+    <div class="divider fade-in-left"></div>
 
     <div class="thumbnail-container">
       <div
         v-for="(image, index) in filteredThumbnails"
         :key="index"
-        class="thumbnail"
+        class="thumbnail fade-in-up"
         @click="activeIndex = getOriginalIndex(index)"
       >
         <img
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="divider end"></div>
+    <div class="divider end fade-in-right"></div>
   </div>
 </template>
 
