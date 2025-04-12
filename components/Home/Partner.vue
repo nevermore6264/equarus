@@ -32,10 +32,7 @@
         &lt;
       </button>
       <div class="carousel">
-        <div
-          class="carousel-inner"
-          :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
-        >
+        <div class="carousel-inner" :style="carouselTransform">
           <div
             class="carousel-item fade-in-up"
             v-for="(image, index) in images"
@@ -53,7 +50,7 @@
 </template>
 
 <script>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount, computed } from "vue";
 
 export default {
   name: "Partner",
@@ -69,6 +66,10 @@ export default {
       { src: "/images/partner6.png", alt: "Partner 6" },
     ];
 
+    const carouselTransform = computed(() => ({
+      transform: `translateX(-${currentSlide.value * 100}%)`,
+    }));
+
     const prevSlide = () => {
       currentSlide.value =
         (currentSlide.value - 1 + images.length) % images.length;
@@ -81,7 +82,7 @@ export default {
     let intervalId = null;
 
     const startAutoRotate = () => {
-      if (intervalId) clearInterval(intervalId);
+      stopAutoRotate();
       intervalId = setInterval(nextSlide, 3000);
     };
 
@@ -93,11 +94,14 @@ export default {
     };
 
     const checkScreenSize = () => {
-      isMobile.value = window.innerWidth <= 768;
-      if (isMobile.value) {
-        startAutoRotate();
-      } else {
-        stopAutoRotate();
+      const newIsMobile = window.innerWidth <= 768;
+      if (newIsMobile !== isMobile.value) {
+        isMobile.value = newIsMobile;
+        if (newIsMobile) {
+          startAutoRotate();
+        } else {
+          stopAutoRotate();
+        }
       }
     };
 
@@ -117,6 +121,7 @@ export default {
       prevSlide,
       nextSlide,
       images,
+      carouselTransform,
     };
   },
 };
