@@ -6,7 +6,7 @@
     <Nuxt />
     <HeaderWork />
     <Title />
-    <Galleria />
+    <Gallerias />
     <Image />
     <Footer />
   </div>
@@ -17,7 +17,7 @@ import Loading from "~/components/Loading.vue";
 import CustomCursor from "~/components/CustomCursor.vue";
 import ScrollAnimation from "~/components/ScrollAnimation.vue";
 import HeaderWork from "~/components/Layout/HeaderWork.vue";
-import Galleria from "~/components/Home/Galleria.vue";
+import Gallerias from "~/components/Home/Gallerias.vue";
 import Title from "~/components/Home/Title.vue";
 import Image from "~/components/Home/Image.vue";
 import Footer from "~/components/Layout/Footer.vue";
@@ -47,7 +47,7 @@ export default {
     CustomCursor,
     ScrollAnimation,
     HeaderWork,
-    Galleria,
+    Gallerias,
     Title,
     Image,
     Footer,

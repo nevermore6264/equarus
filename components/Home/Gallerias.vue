@@ -11,19 +11,19 @@
         <img
           :src="slotProps.item.itemImageSrc"
           :alt="slotProps.item.alt"
-          class="main-image fade-in-up"
+          class="main-image"
         />
       </template>
     </Galleria>
 
-    <div class="divider fade-in-left"></div>
+    <div class="divider"></div>
 
     <div class="thumbnail-container">
       <div
         v-for="(image, index) in filteredThumbnails"
         :key="index"
-        class="thumbnail fade-in-up"
-        @click="activeIndex = getOriginalIndex(index)"
+        class="thumbnail"
+        @click="handleThumbnailClick(index)"
       >
         <img
           :src="image.thumbnailImageSrc"
@@ -33,59 +33,65 @@
       </div>
     </div>
 
-    <div class="divider end fade-in-right"></div>
+    <div class="divider end"></div>
   </div>
 </template>
 
 <script>
+import { ref, computed } from "vue";
+
 export default {
-  name: "Galleria",
-  data() {
-    return {
-      activeIndex: 0,
-      images: [
-        {
-          itemImageSrc: "/images/galleria1.jpg",
-          thumbnailImageSrc: "/images/galleria1.jpg",
-          alt: "Image 1",
-        },
-        {
-          itemImageSrc: "/images/galleria2.jpg",
-          thumbnailImageSrc: "/images/galleria2.jpg",
-          alt: "Image 2",
-        },
-        {
-          itemImageSrc: "/images/galleria3.png",
-          thumbnailImageSrc: "/images/galleria3.png",
-          alt: "Image 3",
-        },
-        {
-          itemImageSrc: "/images/galleria4.jpg",
-          thumbnailImageSrc: "/images/galleria4.jpg",
-          alt: "Image 4",
-        },
-      ],
-    };
-  },
-  computed: {
-    filteredThumbnails() {
-      return this.images.filter((_, index) => index !== this.activeIndex);
-    },
-  },
-  methods: {
-    getOriginalIndex(filteredIndex) {
+  name: "Gallerias",
+  setup() {
+    const activeIndex = ref(0);
+    const images = ref([
+      {
+        itemImageSrc: "/images/galleria1.jpg",
+        thumbnailImageSrc: "/images/galleria1.jpg",
+        alt: "Image 1",
+      },
+      {
+        itemImageSrc: "/images/galleria2.jpg",
+        thumbnailImageSrc: "/images/galleria2.jpg",
+        alt: "Image 2",
+      },
+      {
+        itemImageSrc: "/images/galleria3.png",
+        thumbnailImageSrc: "/images/galleria3.png",
+        alt: "Image 3",
+      },
+      {
+        itemImageSrc: "/images/galleria4.jpg",
+        thumbnailImageSrc: "/images/galleria4.jpg",
+        alt: "Image 4",
+      },
+    ]);
+
+    const filteredThumbnails = computed(() => {
+      return images.value.filter((_, index) => index !== activeIndex.value);
+    });
+
+    const getOriginalIndex = (filteredIndex) => {
       let count = 0;
-      for (let i = 0; i < this.images.length; i++) {
-        if (i !== this.activeIndex) {
+      for (let i = 0; i < images.value.length; i++) {
+        if (i !== activeIndex.value) {
           if (count === filteredIndex) return i;
           count++;
         }
       }
       return 0;
-    },
-  },
-  setup() {
-    return {};
+    };
+
+    const handleThumbnailClick = (filteredIndex) => {
+      activeIndex.value = getOriginalIndex(filteredIndex);
+    };
+
+    return {
+      activeIndex,
+      images,
+      filteredThumbnails,
+      handleThumbnailClick,
+    };
   },
 };
 </script>
