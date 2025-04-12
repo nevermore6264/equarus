@@ -1,7 +1,7 @@
 <template>
   <div class="history">
-    <p class="title">Lịch sử phát triển</p>
-    <div class="underline-container">
+    <p class="title fade-in-up">Lịch sử phát triển</p>
+    <div class="underline-container fade-in-left">
       <div class="underline" style="background-color: #00dbf4"></div>
       <i class="pi pi-arrow-down-left arrow-icon" style="color: #1e1e1e"></i>
     </div>
@@ -10,7 +10,7 @@
     <div class="table">
       <div class="row">
         <div class="cell"></div>
-        <div class="cell">
+        <div class="cell fade-in-right">
           <p class="date">28/05/2021</p>
           <p class="content">
             Công ty TNHH Equarus Decor chính thức được thành lập với định hướng
@@ -21,7 +21,7 @@
         <div class="cell"></div>
       </div>
       <div class="row two">
-        <div class="cell">
+        <div class="cell fade-in-left">
           <p class="date">13/10/2019</p>
           <p class="content">
             Equarus Team được thành lập với hai thành viên sáng lập, khởi đầu
@@ -29,7 +29,7 @@
           </p>
         </div>
         <div class="cell"></div>
-        <div class="cell">
+        <div class="cell fade-in-right">
           <p class="date">11/01/2025</p>
           <p class="content">
             Mở rộng hoạt động kinh doanh ra thị trường quốc tế bao gồm Hoa
@@ -316,6 +316,13 @@ export default {
 @media (min-width: 1921px) {
   .table {
     height: auto !important;
+  }
+}
+
+@media (min-width: 2100px) {
+  .table {
+    height: auto !important;
+    background-size: auto auto;
   }
 }
 </style>

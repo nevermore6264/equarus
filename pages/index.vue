@@ -2,6 +2,7 @@
   <div>
     <Loading />
     <CustomCursor />
+    <ScrollAnimation />
     <Nuxt />
     <Header />
     <Solutions />
@@ -20,6 +21,7 @@
 <script>
 import Loading from "~/components/Loading.vue";
 import CustomCursor from "~/components/CustomCursor.vue";
+import ScrollAnimation from "~/components/ScrollAnimation.vue";
 import Header from "~/components/Layout/Header.vue";
 import Solutions from "~/components/Home/Solutions.vue";
 import Mission from "~/components/Home/Mission.vue";
@@ -36,6 +38,7 @@ export default {
   components: {
     Loading,
     CustomCursor,
+    ScrollAnimation,
     Header,
     Solutions,
     Mission,

@@ -2,6 +2,7 @@
   <div>
     <Loading />
     <CustomCursor />
+    <ScrollAnimation />
     <Nuxt />
     <HeaderWork />
     <Title />
@@ -14,6 +15,7 @@
 <script>
 import Loading from "~/components/Loading.vue";
 import CustomCursor from "~/components/CustomCursor.vue";
+import ScrollAnimation from "~/components/ScrollAnimation.vue";
 import HeaderWork from "~/components/Layout/HeaderWork.vue";
 import Galleria from "~/components/Home/Galleria.vue";
 import Title from "~/components/Home/Title.vue";
@@ -43,6 +45,7 @@ export default {
   components: {
     Loading,
     CustomCursor,
+    ScrollAnimation,
     HeaderWork,
     Galleria,
     Title,
