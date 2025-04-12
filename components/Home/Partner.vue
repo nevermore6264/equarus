@@ -53,11 +53,21 @@
 </template>
 
 <script>
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
 export default {
   name: "Partner",
   setup() {
     const currentSlide = ref(0);
     const isMobile = ref(false);
+    const images = [
+      { src: "/images/partner1.png", alt: "Partner 1" },
+      { src: "/images/partner2.png", alt: "Partner 2" },
+      { src: "/images/partner3.png", alt: "Partner 3" },
+      { src: "/images/partner4.png", alt: "Partner 4" },
+      { src: "/images/partner5.png", alt: "Partner 5" },
+      { src: "/images/partner6.png", alt: "Partner 6" },
+    ];
 
     const prevSlide = () => {
       currentSlide.value =
@@ -68,28 +78,32 @@ export default {
       currentSlide.value = (currentSlide.value + 1) % images.length;
     };
 
-    // Auto-rotate carousel
     let intervalId = null;
 
     const startAutoRotate = () => {
+      if (intervalId) clearInterval(intervalId);
       intervalId = setInterval(nextSlide, 3000);
     };
 
     const stopAutoRotate = () => {
-      clearInterval(intervalId);
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+      }
     };
 
-    // Check screen size
     const checkScreenSize = () => {
       isMobile.value = window.innerWidth <= 768;
+      if (isMobile.value) {
+        startAutoRotate();
+      } else {
+        stopAutoRotate();
+      }
     };
 
     onMounted(() => {
       checkScreenSize();
       window.addEventListener("resize", checkScreenSize);
-      if (isMobile.value) {
-        startAutoRotate();
-      }
     });
 
     onBeforeUnmount(() => {
