@@ -12,13 +12,15 @@ export default {
     gsap.registerPlugin(ScrollTrigger);
 
     // Smooth scroll animation
-    gsap.to(window, {
-      scrollTo: {
-        y: 0,
-        autoKill: false,
-      },
-      duration: 1,
-    });
+    if (window.scrollY > 0) {
+      gsap.to(window, {
+        scrollTo: {
+          y: 0,
+          autoKill: false,
+        },
+        duration: 1,
+      });
+    }
 
     // Fade in elements with different directions
     gsap.utils.toArray(".fade-in-up").forEach((element) => {
