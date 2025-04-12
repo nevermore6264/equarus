@@ -129,7 +129,9 @@ export default {
 
 .join-us {
   background-image: url("/images/join_us.png");
-  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   height: 841px;
   border-radius: 13.33px;
