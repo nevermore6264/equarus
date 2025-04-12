@@ -64,8 +64,11 @@
 </template>
 
 <script>
-defineOptions({
+export default {
   name: "Careers",
+  setup() {
+    return {};
+  },
   methods: {
     redirectToLark() {
       window.open(
@@ -74,7 +77,7 @@ defineOptions({
       );
     },
   },
-});
+};
 </script>
 
 <style scoped>

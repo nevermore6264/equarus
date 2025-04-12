@@ -5,9 +5,12 @@
 </template>
 
 <script>
-defineOptions({
-  name: "Header",
-});
+export default {
+  name: "Title",
+  setup() {
+    return {};
+  },
+};
 </script>
 
 <style scoped>

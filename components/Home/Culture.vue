@@ -56,6 +56,9 @@
 <script>
 export default {
   name: "Culture",
+  setup() {
+    return {};
+  },
 };
 </script>
 

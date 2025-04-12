@@ -38,10 +38,13 @@
   </div>
 </template>
 
-<script setup>
-defineOptions({
+<script>
+export default {
   name: "Target",
-});
+  setup() {
+    return {};
+  },
+};
 </script>
 
 <style scoped>

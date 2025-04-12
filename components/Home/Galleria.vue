@@ -39,6 +39,7 @@
 
 <script>
 export default {
+  name: "Galleria",
   data() {
     return {
       activeIndex: 0,
@@ -82,6 +83,9 @@ export default {
       }
       return 0;
     },
+  },
+  setup() {
+    return {};
   },
 };
 </script>

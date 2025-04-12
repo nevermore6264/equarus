@@ -86,6 +86,9 @@
 <script>
 export default {
   name: "Solutions",
+  setup() {
+    return {};
+  },
 };
 </script>
 

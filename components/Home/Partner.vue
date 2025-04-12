@@ -52,58 +52,60 @@
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+<script>
+export default {
+  name: "Partner",
+  setup() {
+    const currentSlide = ref(0);
+    const isMobile = ref(false);
 
-// Danh sách ảnh
-const images = [
-  { src: "/images/partner/amazon.png", alt: "Amazon" },
-  { src: "/images/partner/walmart.png", alt: "Walmart" },
-  { src: "/images/partner/shopify.png", alt: "Shopify" },
-  { src: "/images/partner/lianlianglobal.png", alt: "LianLianGlobal" },
-  { src: "/images/partner/worldfirst.png", alt: "WORLDFIRST" },
-];
+    const prevSlide = () => {
+      currentSlide.value =
+        (currentSlide.value - 1 + images.length) % images.length;
+    };
 
-// Carousel logic
-const currentSlide = ref(0);
-const isMobile = ref(false);
+    const nextSlide = () => {
+      currentSlide.value = (currentSlide.value + 1) % images.length;
+    };
 
-const prevSlide = () => {
-  currentSlide.value = (currentSlide.value - 1 + images.length) % images.length;
+    // Auto-rotate carousel
+    let intervalId = null;
+
+    const startAutoRotate = () => {
+      intervalId = setInterval(nextSlide, 3000);
+    };
+
+    const stopAutoRotate = () => {
+      clearInterval(intervalId);
+    };
+
+    // Check screen size
+    const checkScreenSize = () => {
+      isMobile.value = window.innerWidth <= 768;
+    };
+
+    onMounted(() => {
+      checkScreenSize();
+      window.addEventListener("resize", checkScreenSize);
+      if (isMobile.value) {
+        startAutoRotate();
+      }
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener("resize", checkScreenSize);
+      stopAutoRotate();
+    });
+
+    return {
+      currentSlide,
+      isMobile,
+      prevSlide,
+      nextSlide,
+      images,
+    };
+  },
 };
-
-const nextSlide = () => {
-  currentSlide.value = (currentSlide.value + 1) % images.length;
-};
-
-// Auto-rotate carousel
-let intervalId = null;
-
-const startAutoRotate = () => {
-  intervalId = setInterval(nextSlide, 3000);
-};
-
-const stopAutoRotate = () => {
-  clearInterval(intervalId);
-};
-
-// Check screen size
-const checkScreenSize = () => {
-  isMobile.value = window.innerWidth <= 768;
-};
-
-onMounted(() => {
-  checkScreenSize();
-  window.addEventListener("resize", checkScreenSize);
-  if (isMobile.value) {
-    startAutoRotate();
-  }
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener("resize", checkScreenSize);
-  stopAutoRotate();
-});
 </script>
 
 <style scoped>
