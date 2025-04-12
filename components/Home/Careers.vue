@@ -64,7 +64,7 @@
 </template>
 
 <script>
-export default {
+defineOptions({
   name: "Careers",
   methods: {
     redirectToLark() {
@@ -74,7 +74,7 @@ export default {
       );
     },
   },
-};
+});
 </script>
 
 <style scoped>

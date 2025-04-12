@@ -5,9 +5,9 @@
 </template>
 
 <script>
-export default {
+defineOptions({
   name: "Header",
-};
+});
 </script>
 
 <style scoped>
