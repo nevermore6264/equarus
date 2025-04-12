@@ -1,6 +1,6 @@
 <template>
   <div class="image-gallery">
-    <img src="~/public/images/work/6.png" alt="Big Image" class="big-image" />
+    <img src="/images/work/6.png" alt="Big Image" class="big-image" />
     <img
       v-for="(image, index) in smallImages"
       :key="index"
@@ -12,17 +12,21 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
   name: "ImageGallery",
-  data() {
+  setup() {
+    const smallImages = ref([
+      "/images/work/3.png",
+      "/images/work/2.png",
+      "/images/work/4.png",
+      "/images/work/5.png",
+      "/images/work/6.png",
+    ]);
+
     return {
-      smallImages: [
-        "/images/work/3.png",
-        "/images/work/2.png",
-        "/images/work/4.png",
-        "/images/work/5.png",
-        "/images/work/6.png",
-      ],
+      smallImages,
     };
   },
 };
@@ -42,13 +46,15 @@ export default {
   grid-column: span 2;
   grid-row: span 2;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 13.33px;
 }
 
 .small-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 13.33px;
 }
 

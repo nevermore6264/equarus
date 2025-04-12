@@ -58,12 +58,11 @@ export default {
     const currentSlide = ref(0);
     const isMobile = ref(false);
     const images = [
-      { src: "/images/partner1.png", alt: "Partner 1" },
-      { src: "/images/partner2.png", alt: "Partner 2" },
-      { src: "/images/partner3.png", alt: "Partner 3" },
-      { src: "/images/partner4.png", alt: "Partner 4" },
-      { src: "/images/partner5.png", alt: "Partner 5" },
-      { src: "/images/partner6.png", alt: "Partner 6" },
+      { src: "/images/partner/amazon.png", alt: "Amazon" },
+      { src: "/images/partner/walmart.png", alt: "Walmart" },
+      { src: "/images/partner/shopify.png", alt: "Shopify" },
+      { src: "/images/partner/lianlianglobal.png", alt: "LianLianGlobal" },
+      { src: "/images/partner/worldfirst.png", alt: "WORLDFIRST" },
     ];
 
     const carouselTransform = computed(() => ({
