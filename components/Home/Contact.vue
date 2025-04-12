@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
-    <p class="title">Contact</p>
-    <div class="underline-container">
+    <p class="title fade-in-up">Contact</p>
+    <div class="underline-container fade-in-left">
       <div class="underline" style="background-color: #00dbf4"></div>
       <i
         class="pi pi-arrow-down-left"
@@ -13,12 +13,12 @@
         "
       ></i>
     </div>
-    <p class="subtitle">Lets Work Together</p>
+    <p class="subtitle fade-in-up">Lets Work Together</p>
 
     <!-- Form thay thế cho join-us -->
     <div class="contact-form">
       <div class="form-row">
-        <div class="form-group">
+        <div class="form-group fade-in-left">
           <label for="name">Tên <span class="required">*</span></label>
           <InputText
             id="name"
@@ -37,7 +37,7 @@
             Tên là bắt buộc
           </small>
         </div>
-        <div class="form-group">
+        <div class="form-group fade-in-right">
           <label for="phone"
             >Số điện thoại <span class="required">*</span></label
           >
@@ -61,7 +61,7 @@
       </div>
 
       <div class="form-row">
-        <div class="form-group">
+        <div class="form-group fade-in-up">
           <label for="email">Email <span class="required">*</span></label>
           <InputText
             id="email"
@@ -83,7 +83,7 @@
       </div>
 
       <div class="form-row">
-        <div class="form-group">
+        <div class="form-group fade-in-up">
           <label for="content">Lời nhắn</label>
           <Textarea
             id="content"
@@ -99,7 +99,7 @@
 
       <Button
         label="Submit"
-        class="submit-button"
+        class="submit-button scale-in"
         @click="handleSubmit"
         :loading="loading"
         :disabled="loading || v$.form.$invalid"

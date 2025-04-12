@@ -1,8 +1,8 @@
 <template>
   <div class="careers" id="careers">
-    <p class="title">Careers</p>
+    <p class="title fade-in-up">Careers</p>
     <!-- Thêm thẻ div với gạch chân và icon -->
-    <div class="underline-container">
+    <div class="underline-container fade-in-left">
       <div class="underline" style="background-color: #00dbf4"></div>
       <i
         class="pi pi-arrow-down-left"
@@ -14,48 +14,48 @@
         "
       ></i>
     </div>
-    <p class="subtitle">Chức năng, nhiệm vụ phòng ban</p>
+    <p class="subtitle fade-in-up">Chức năng, nhiệm vụ phòng ban</p>
     <div class="departments">
-      <div class="department">
+      <div class="department fade-in-left">
         <p class="title">R&D</p>
         <p class="desc">Nghiên cứu và phát triển sản phẩm mới</p>
       </div>
-      <div class="department">
+      <div class="department fade-in-up">
         <p class="title">Digital Marketing</p>
         <p class="desc">
           Quản lý và triển khai các chiến dịch marketing trực tuyến
         </p>
       </div>
-      <div class="department">
+      <div class="department fade-in-up">
         <p class="title">Product Design</p>
         <p class="desc">Thiết kế và phát triển sản phẩm</p>
       </div>
-      <div class="department">
+      <div class="department fade-in-right">
         <p class="title">Brand Marketing</p>
         <p class="desc">Xây dựng và phát triển thương hiệu</p>
       </div>
 
-      <div class="department">
+      <div class="department fade-in-left">
         <p class="title">Supplychain</p>
         <p class="desc">Quản lý chuỗi cung ứng và vận hành kho hàng</p>
       </div>
-      <div class="department">
+      <div class="department fade-in-up">
         <p class="title">Legal</p>
         <p class="desc">
           Quản lý các vấn đề pháp lý sản phẩm và tuân thủ quy định của sàn
         </p>
       </div>
-      <div class="department">
+      <div class="department fade-in-up">
         <p class="title">HR</p>
         <p class="desc">Quản lý nhân sự và phát triển đội ngũ</p>
       </div>
-      <div class="department">
+      <div class="department fade-in-right">
         <p class="title">Finance</p>
         <p class="desc">Quản lý tài chính</p>
       </div>
     </div>
 
-    <div class="join-us">
+    <div class="join-us scale-in">
       <button class="get-started-button" @click="redirectToLark">
         JOIN OUR TEAM
       </button>
