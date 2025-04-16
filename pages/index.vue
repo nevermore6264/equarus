@@ -4,7 +4,7 @@
     <!-- <CustomCursor /> -->
     <Nuxt />
     <Header />
-    <Solutions />
+    <!-- <Solutions />
     <Mission />
     <Gallerias />
     <Culture />
@@ -13,7 +13,7 @@
     <Partner />
     <Contact />
     <Careers />
-    <Footer />
+    <Footer /> -->
   </div>
 </template>
 
