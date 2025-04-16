@@ -1,10 +1,10 @@
 <template>
   <div>
-    <!-- <Loading /> -->
-    <!-- <CustomCursor /> -->
+    <Loading />
+    <CustomCursor />
     <Nuxt />
     <Header />
-    <!-- <Solutions />
+    <Solutions />
     <Mission />
     <Gallerias />
     <Culture />
@@ -13,14 +13,14 @@
     <Partner />
     <Contact />
     <Careers />
-    <Footer /> -->
+    <Footer />
   </div>
 </template>
 
 <script>
 import Loading from "~/components/Loading.vue";
 import CustomCursor from "~/components/CustomCursor.vue";
-// import ScrollAnimation from "~/components/ScrollAnimation.vue";
+import ScrollAnimation from "~/components/ScrollAnimation.vue";
 import Header from "~/components/Layout/Header.vue";
 import Solutions from "~/components/Home/Solutions.vue";
 import Mission from "~/components/Home/Mission.vue";
@@ -37,7 +37,7 @@ export default {
   components: {
     Loading,
     CustomCursor,
-    // ScrollAnimation,
+    ScrollAnimation,
     Header,
     Solutions,
     Mission,
