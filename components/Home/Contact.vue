@@ -166,8 +166,8 @@ export default {
 
         // Gửi email sử dụng EmailJS
         const response = await emailjs.send(
-          "service_6j59u5y",
-          "template_e36dehv",
+          "service_yqaxztl",
+          "template_rx0k4oq",
           {
             from_name: this.form.name,
             from_email: this.form.email,
@@ -185,7 +185,7 @@ export default {
               hour12: false,
             }),
           },
-          "Zf3WoNIf04FFZlVWM"
+          "xB2z-u2__AP3SA4QW"
         );
 
         if (response.status === 200) {
