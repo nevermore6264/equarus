@@ -118,17 +118,15 @@ export default {
   setup() {
     return { v$: useVuelidate() };
   },
-  data() {
-    return {
-      form: {
-        name: "",
-        phone: "",
-        email: "",
-        content: "",
-      },
-      loading: false,
-    };
-  },
+  data: () => ({
+    form: {
+      name: "",
+      phone: "",
+      email: "",
+      content: "",
+    },
+    loading: false,
+  }),
   validations() {
     return {
       form: {
