@@ -26,16 +26,7 @@
             class="form-input"
             placeholder="Quynh Huy"
             :disabled="loading"
-            :class="{
-              'p-invalid': v$.form.name.$invalid && v$.form.name.$dirty,
-            }"
           />
-          <small
-            class="p-error"
-            v-if="v$.form.name.$invalid && v$.form.name.$dirty"
-          >
-            Tên là bắt buộc
-          </small>
         </div>
         <div class="form-group fade-in-right">
           <label for="phone"
@@ -47,16 +38,7 @@
             class="form-input"
             placeholder="+84"
             :disabled="loading"
-            :class="{
-              'p-invalid': v$.form.phone.$invalid && v$.form.phone.$dirty,
-            }"
           />
-          <small
-            class="p-error"
-            v-if="v$.form.phone.$invalid && v$.form.phone.$dirty"
-          >
-            Số điện thoại là bắt buộc
-          </small>
         </div>
       </div>
 
@@ -69,16 +51,7 @@
             class="form-input"
             placeholder="email@gmail.com"
             :disabled="loading"
-            :class="{
-              'p-invalid': v$.form.email.$invalid && v$.form.email.$dirty,
-            }"
           />
-          <small
-            class="p-error"
-            v-if="v$.form.email.$invalid && v$.form.email.$dirty"
-          >
-            Email là bắt buộc và phải đúng định dạng
-          </small>
         </div>
       </div>
 
@@ -102,7 +75,6 @@
         class="submit-button scale-in"
         @click="handleSubmit"
         :loading="loading"
-        :disabled="loading || v$.form.$invalid"
       />
     </div>
   </div>
@@ -110,8 +82,6 @@
 
 <script>
 import emailjs from "@emailjs/browser";
-import { useVuelidate } from "@vuelidate/core";
-import { required, email } from "@vuelidate/validators";
 
 export default {
   name: "Contact",
@@ -126,28 +96,8 @@ export default {
       loading: false,
     };
   },
-  setup() {
-    const v$ = useVuelidate();
-    return { v$ };
-  },
-  created() {
-    this.v$.$touch();
-  },
-  validations() {
-    return {
-      form: {
-        name: { required },
-        phone: { required },
-        email: { required, email },
-        content: {},
-      },
-    };
-  },
   methods: {
     async handleSubmit() {
-      const isFormCorrect = await this.v$.$validate();
-      if (!isFormCorrect) return;
-
       try {
         this.loading = true;
 
@@ -184,7 +134,6 @@ export default {
             email: "",
             content: "",
           };
-          this.v$.$reset();
         }
       } catch (error) {
         console.error("Error sending email:", error);
