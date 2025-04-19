@@ -24,9 +24,14 @@
             id="name"
             v-model="form.name"
             class="form-input"
+            :class="{ 'input-error': errors.name }"
             placeholder="Quynh Huy"
             :disabled="loading"
+            @input="clearError('name')"
           />
+          <small v-if="errors.name" class="error-message">{{
+            errors.name
+          }}</small>
         </div>
         <div class="form-group fade-in-right">
           <label for="phone"
@@ -36,9 +41,14 @@
             id="phone"
             v-model="form.phone"
             class="form-input"
+            :class="{ 'input-error': errors.phone }"
             placeholder="+84"
             :disabled="loading"
+            @input="clearError('phone')"
           />
+          <small v-if="errors.phone" class="error-message">{{
+            errors.phone
+          }}</small>
         </div>
       </div>
 
@@ -49,9 +59,14 @@
             id="email"
             v-model="form.email"
             class="form-input"
+            :class="{ 'input-error': errors.email }"
             placeholder="email@gmail.com"
             :disabled="loading"
+            @input="clearError('email')"
           />
+          <small v-if="errors.email" class="error-message">{{
+            errors.email
+          }}</small>
         </div>
       </div>
 
@@ -75,6 +90,7 @@
         class="submit-button scale-in"
         @click="handleSubmit"
         :loading="loading"
+        :disabled="loading"
       />
     </div>
   </div>
@@ -93,11 +109,58 @@ export default {
         email: "",
         content: "",
       },
+      errors: {
+        name: "",
+        phone: "",
+        email: "",
+      },
       loading: false,
     };
   },
   methods: {
+    validateForm() {
+      let isValid = true;
+      this.errors = {
+        name: "",
+        phone: "",
+        email: "",
+      };
+
+      // Validate name
+      if (!this.form.name.trim()) {
+        this.errors.name = "Tên là bắt buộc";
+        isValid = false;
+      }
+
+      // Validate phone
+      if (!this.form.phone.trim()) {
+        this.errors.phone = "Số điện thoại là bắt buộc";
+        isValid = false;
+      }
+
+      // Validate email
+      if (!this.form.email.trim()) {
+        this.errors.email = "Email là bắt buộc";
+        isValid = false;
+      } else if (!this.isValidEmail(this.form.email)) {
+        this.errors.email = "Email không hợp lệ";
+        isValid = false;
+      }
+
+      return isValid;
+    },
+    isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    },
+    clearError(field) {
+      this.errors[field] = "";
+    },
     async handleSubmit() {
+      if (!this.validateForm()) {
+        return;
+      }
+
       try {
         this.loading = true;
 
@@ -360,5 +423,16 @@ export default {
 
 .p-invalid {
   border-color: #f44336 !important;
+}
+
+.input-error {
+  border-color: #f44336 !important;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
 }
 </style>
