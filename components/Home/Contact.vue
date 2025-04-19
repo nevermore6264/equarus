@@ -115,9 +115,6 @@ import { required, email } from "@vuelidate/validators";
 
 export default {
   name: "Contact",
-  setup() {
-    return { v$: useVuelidate() };
-  },
   data() {
     return {
       form: {
@@ -128,6 +125,13 @@ export default {
       },
       loading: false,
     };
+  },
+  setup() {
+    const v$ = useVuelidate();
+    return { v$ };
+  },
+  created() {
+    this.v$.$touch();
   },
   validations() {
     return {
