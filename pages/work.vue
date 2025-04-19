@@ -13,6 +13,7 @@
 
 <script>
 import Loading from "~/components/Loading.vue";
+import ScrollAnimation from "~/components/ScrollAnimation.vue";
 import CustomCursor from "~/components/CustomCursor.vue";
 import HeaderWork from "~/components/Layout/HeaderWork.vue";
 import Gallerias from "~/components/Home/Gallerias.vue";
@@ -43,6 +44,7 @@ export default {
   components: {
     Loading,
     CustomCursor,
+    ScrollAnimation,
     HeaderWork,
     Gallerias,
     Title,
@@ -51,3 +53,4 @@ export default {
   },
 };
 </script>
+''''''
